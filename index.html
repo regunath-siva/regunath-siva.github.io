@@ -6,25 +6,42 @@
     <title>Sivanandham R - Lead Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
 
+        h1, h2, h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Header Section */
         header {
-            background-color: #222;
+            background-color: #333;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
+            padding: 50px 20px;
+        }
+
+        header .profile {
+            margin-bottom: 20px;
         }
 
         header .profile img {
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
+            width: 120px;
+            height: 120px;
         }
 
         header h1 {
@@ -34,94 +51,124 @@
 
         header .contact-info {
             font-size: 18px;
-            margin-top: 10px;
         }
 
+        header .contact-info a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        /* Navbar Styles */
         .nav-bar {
             display: flex;
             justify-content: center;
             background-color: #444;
-            padding: 10px 0;
-            font-size: 18px;
+            padding: 15px;
+            margin-bottom: 40px;
         }
 
         .nav-bar a {
             color: white;
             text-decoration: none;
             margin: 0 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
+        .nav-bar a:hover {
+            color: #00bcd4;
+        }
+
+        /* Section Styles */
         .section {
             padding: 60px 20px;
             max-width: 1200px;
             margin: 0 auto;
-            text-align: left;
         }
 
         .section h2 {
             font-size: 32px;
-            color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
         }
 
-        .section p {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
+        /* Skills Section */
         .skills-container {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            justify-content: center;
         }
 
         .skill {
             background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin: 10px;
             border-radius: 20px;
+            font-size: 18px;
         }
 
-        .experience .role {
+        /* Experience Section */
+        .experience {
+            margin-top: 40px;
+        }
+
+        .role {
             font-weight: bold;
+            font-size: 22px;
+            color: #444;
             margin-top: 20px;
         }
 
+        /* Projects Section */
         .projects .project {
             background-color: #fff;
             padding: 20px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             border-radius: 8px;
-            text-align: left;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .projects .project h3 {
-            color: #444;
             font-size: 24px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .projects .project p {
+            font-size: 16px;
+            color: #555;
         }
 
         .projects .project a {
-            color: #0056b3;
+            color: #00bcd4;
             text-decoration: none;
+            font-size: 16px;
         }
 
+        .projects .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
-            background-color: #222;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 20px;
+            margin-top: 50px;
         }
 
         footer .contact-links a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+        }
+
+        footer .contact-links a:hover {
+            color: #00bcd4;
         }
 
     </style>
@@ -132,9 +179,9 @@
     <div class="profile">
         <img src="profile-placeholder.jpg" alt="Sivanandham R">
         <h1>Sivanandham R</h1>
+        <p>Lead Engineer | Technical Lead</p>
+        <p>Saidapet, Chennai, India</p>
         <div class="contact-info">
-            <p>Lead Engineer | Technical Lead</p>
-            <p>Saidapet, Chennai, India</p>
             <p>Mobile: <a href="tel:+918771474161">+91 8771474161</a> | Email: <a href="mailto:regunathsiva@gmail.com">regunathsiva@gmail.com</a></p>
         </div>
     </div>
@@ -227,26 +274,14 @@
 
     <div class="project">
         <h3>ElasticRun Sales</h3>
-        <p>Developed an e-commerce app for salespersons with next-day deliveries and features such as wishlist, secure payment gateway, and offline functionality.</p>
+        <p>Developed an e-commerce app for salespersons with next-day deliveries and features such as wishlist, flexible payment options, and offline functionality.</p>
         <ul>
-            <li>Components: BLOC, SQFlite, Dio, Google Maps, WebView</li>
+            <li>Components: BLOC, SQFlite, Dio, Google Maps</li>
         </ul>
         <a href="https://play.google.com/store/apps/details?id=run.er.ecom.assist.internal&hl=en-IN" target="_blank">View on Play Store</a>
     </div>
 
-    <div class="project">
-        <h3>Mobile Kirana</h3>
-        <p>Developed an e-commerce app for resellers to buy Kirana items at prices below MRP, enabling them to serve multiple customers efficiently.</p>
-        <a href="#">View on Play Store (authorized users only)</a>
-    </div>
-
-    <div class="project">
-        <h3>Velocity Duos</h3>
-        <p>A mobile app customized for the trucking industry, addressing various roles such as vendor management, operations, and business development.</p>
-        <a href="#">View on Play Store (authorized users only)</a>
-    </div>
-
-    <!-- Add other projects as needed -->
+    <!-- More Projects as needed -->
 </div>
 
 <footer>
