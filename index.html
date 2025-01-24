@@ -1,284 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sivanandham R - Lead Engineer | Technical Lead</title>
+    <title>Sivanandham R - Lead Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Segoe UI', sans-serif;
-            color: #333;
-        }
-
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 50px;
-            z-index: 100;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
         }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            text-transform: uppercase;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #3498db;
-        }
-
-        nav .contact-info {
-            text-align: right;
-            font-size: 14px;
-            color: #ecf0f1;
-        }
-
-        /* Hero Section */
-        #hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
-            height: 100vh;
+        header {
+            background-color: #222;
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding: 20px 0;
             text-align: center;
         }
 
-        #hero h1 {
-            font-size: 50px;
+        header .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
             margin-bottom: 10px;
         }
 
-        #hero p {
-            font-size: 20px;
-            max-width: 700px;
+        header h1 {
+            font-size: 36px;
+            margin: 10px 0;
         }
 
-        #hero .btn {
-            padding: 12px 30px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            margin-top: 20px;
-            text-decoration: none;
+        header .contact-info {
             font-size: 18px;
-            transition: background-color 0.3s ease;
+            margin-top: 10px;
         }
 
-        #hero .btn:hover {
-            background-color: #2980b9;
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+            font-size: 18px;
         }
 
-        /* Section Styles */
-        section {
-            padding: 80px 20px;
-            min-height: 100vh;
-            margin-top: 80px;
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 35px;
-            margin-bottom: 40px;
-            color: #2c3e50;
-        }
-
-        .content-wrapper {
-            max-width: 1000px;
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
 
-        .content-wrapper p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
+        .section h2 {
+            font-size: 32px;
+            color: #333;
             margin-bottom: 20px;
         }
 
-        .content-wrapper ul {
-            list-style: none;
-            padding: 0;
+        .section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
 
-        .content-wrapper ul li {
-            font-size: 18px;
-            margin: 8px 0;
-            color: #555;
-        }
-
-        .content-wrapper ul li::before {
-            content: '✔';
-            margin-right: 10px;
-            color: #3498db;
-        }
-
-        .btn-action {
-            padding: 12px 30px;
-            background-color: #3498db;
+        .skill {
+            background-color: #333;
             color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .experience .role {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .projects .project {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .projects .project h3 {
+            color: #444;
+            font-size: 24px;
+        }
+
+        .projects .project a {
+            color: #0056b3;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-top: 30px;
-            transition: background-color 0.3s ease;
         }
 
-        .btn-action:hover {
-            background-color: #2980b9;
-        }
-
-        /* Footer */
         footer {
-            background-color: #2c3e50;
+            background-color: #222;
             color: white;
             text-align: center;
             padding: 20px;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        /* Scrollable Links */
-        html {
-            scroll-behavior: smooth;
+        footer .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
 
     </style>
 </head>
-
 <body>
 
-<!-- Navigation -->
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="contact-info">
-        <p>Sivanandham R</p>
-        <p>Lead Engineer | Technical Lead</p>
-        <p>Mobile: 7871474161</p>
+<header>
+    <div class="profile">
+        <img src="profile-placeholder.jpg" alt="Sivanandham R">
+        <h1>Sivanandham R</h1>
+        <div class="contact-info">
+            <p>Lead Engineer | Technical Lead</p>
+            <p>Mobile: <a href="tel:+918771474161">+91 8771474161</a> | Email: <a href="mailto:regunathsiva@gmail.com">regunathsiva@gmail.com</a></p>
+        </div>
     </div>
-</nav>
+</header>
 
-<!-- Hero Section -->
-<section id="hero">
-    <h1>Sivanandham R</h1>
-    <p>Lead Engineer with 9+ years of experience in building mobile applications. Passionate about creating seamless user experiences with cutting-edge technologies.</p>
-    <a href="#about" class="btn">Learn More About Me</a>
-</section>
+<div class="nav-bar">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
 
-<!-- About Section -->
-<section id="about">
-    <div class="content-wrapper">
-        <h2 class="section-title">About Me</h2>
-        <p>Experienced Lead Engineer with a focus on Flutter and mobile application development. With over 9 years of experience, I have successfully led teams to develop scalable, user-friendly apps for various industries like e-commerce, safety, and logistics.</p>
-        <a href="#skills" class="btn-action">Explore My Skills</a>
+<div id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Lead Engineer with over 9.5 years of experience in mobile app development, specializing in Flutter, React Native, and Native Android.
+        Throughout my career, I have consistently delivered high-quality applications, focusing on performance, scalability, and user experience.
+        I have led cross-functional teams and contributed to multiple successful projects, excelling in both technical and leadership roles.
+        I believe in writing clean, maintainable code and follow best practices in mobile development.
+        My experience spans across e-commerce, safety management, and logistics domains, where I have successfully driven the development of mobile applications.
+    </p>
+</div>
+
+<div id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">Flutter</div>
+        <div class="skill">Dart</div>
+        <div class="skill">React Native</div>
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Android</div>
+        <div class="skill">CI/CD</div>
+        <div class="skill">API Integration</div>
+        <div class="skill">Git</div>
+        <div class="skill">Performance Optimization</div>
     </div>
-</section>
+</div>
 
-<!-- Skills Section -->
-<section id="skills">
-    <div class="content-wrapper">
-        <h2 class="section-title">Skills</h2>
+<div id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="experience">
+        <div class="role">Lead Engineer | ElasticRun</div>
+        <p><strong>Apr 2022 – Dec 2023 | Bengaluru</strong></p>
+        <p>Led a team of 5 developers to design and develop e-commerce mobile apps for shop owners and sales teams using Flutter. Managed architecture, API integration, and end-to-end testing for production-ready apps. Conducted sprint planning and code reviews to ensure quality and timely delivery.</p>
         <ul>
-            <li>Flutter Development</li>
-            <li>React Native</li>
-            <li>Native Android (Java & Kotlin)</li>
-            <li>CI/CD & Automated Testing</li>
-            <li>Version Control with Git</li>
-            <li>API Integration</li>
+            <li>Developed the ElasticRun app for shop owners with wishlist functionality and secure payment integration.</li>
+            <li>Designed the ElasticRun Sales app with offline support and intuitive cart features.</li>
+            <li>Collaborated with cross-functional teams for app optimization and performance enhancement.</li>
         </ul>
-        <a href="#experience" class="btn-action">See My Experience</a>
-    </div>
-</section>
 
-<!-- Experience Section -->
-<section id="experience">
-    <div class="content-wrapper">
-        <h2 class="section-title">Experience</h2>
+        <div class="role">Sr. Mobile Developer | Safetymojo</div>
+        <p><strong>Jan 2024 – Dec 2024 | Remote</strong></p>
+        <p>Led the development of safety management apps using Flutter. Managed a team of 3 developers, conducting code reviews, sprint planning, and requirement grooming. Delivered cross-platform apps with real-time safety monitoring and compliance tracking features.</p>
         <ul>
-            <li><strong>Lead Engineer | Elasticrun</strong> (2022–Present) - Led a team of engineers to develop and maintain large-scale mobile applications.</li>
-            <li><strong>Mobile Developer | Safetymojo</strong> (2021–2022) - Developed cross-platform mobile apps using Flutter for safety management solutions.</li>
-            <li><strong>Software Engineer | Elasticrun</strong> (2018–2021) - Built and optimized Android and React Native apps for the logistics industry.</li>
+            <li>Implemented real-time safety monitoring and compliance tracking with Conversational AI.</li>
+            <li>Designed safety management apps for clients in the construction and manufacturing industries.</li>
         </ul>
-        <a href="#projects" class="btn-action">See My Projects</a>
     </div>
-</section>
+</div>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="content-wrapper">
-        <h2 class="section-title">Projects</h2>
+<div id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>ElasticRun</h3>
+        <p>Developed an e-commerce mobile app for shop owners with features like wishlist, cart, and promotions.</p>
         <ul>
-            <li><strong>ElasticRun</strong> - E-commerce platform mobile app. <a href="https://play.google.com/store/apps/details?id=run.er.ecom&hl=en-IN" class="btn-action">View on Play Store</a></li>
-            <li><strong>Velocity Duos</strong> - A mobile app for the trucking industry. <a href="https://play.google.com/store/apps/details?id=truck.elastic.run.sancharun.field" class="btn-action">View on Play Store</a></li>
-            <li><strong>Mobile Kirana</strong> - A reseller e-commerce platform. <a href="#" class="btn-action">Internal App</a></li>
+            <li>Integrated a secure payment gateway.</li>
+            <li>Implemented offline support for seamless operation.</li>
         </ul>
-        <a href="#contact" class="btn-action">Get in Touch</a>
+        <a href="https://play.google.com/store/apps/details?id=run.er.ecom&hl=en-IN" target="_blank">View on Play Store</a>
     </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="content-wrapper">
-        <h2 class="section-title">Contact</h2>
-        <p>If you would like to collaborate or have any questions, feel free to reach out to me!</p>
-        <p>Email: <strong>regunathsiva@gmail.com</strong></p>
-        <p>Phone: <strong>7871474161</strong></p>
+    <div class="project">
+        <h3>ElasticRun Sales</h3>
+        <p>A mobile app for sales teams with offline support and a user-friendly cart interface for next-day deliveries.</p>
+        <ul>
+            <li>Integrated secure payment gateway for easy transactions.</li>
+            <li>Optimized the app for performance on both Android and iOS.</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=run.er.ecom.assist.internal&hl=en-IN" target="_blank">View on Play Store</a>
     </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 Sivanandham R. All Rights Reserved.</p>
-</footer>
+    <div class="project">
+        <h3>Mobile Kirana</h3>
+        <p>An e-commerce platform for resellers to buy kirana items at lower prices.</p>
+        <ul>
+            <li>Implemented features like competitive pricing and reseller support.</li>
+            <li>Used Realm Database, Redux, and OTP login for secure user authentication.</li>
+        </ul>
+        <a href="#" target="_blank">View on Play Store</a>
+    </div>
+</div>
+
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via email or phone for collaboration or any inquiries.</p>
+    <footer>
+        <div class="contact-links">
+            <a href="mailto:regunathsiva@gmail.com">Email Me</a>
+            <a href="tel:+918771474161">Call Me</a>
+        </div>
+    </footer>
+</div>
 
 </body>
-
 </html>
