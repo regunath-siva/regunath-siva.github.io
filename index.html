@@ -300,7 +300,21 @@
             font-size: 1rem;
             color: #555;
         }
+        .tech-stack-icons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+        }
 
+        .project-card {
+            position: relative; /* Ensure icons are positioned relative to the card */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
         /* Footer Section */
         footer {
             background: linear-gradient(135deg, #007bff, #00bcd4);
@@ -483,6 +497,10 @@
     <div class="projects-grid">
         <!-- SafetyMojo -->
         <div class="project-card">
+            <div class="tech-stack-icons">
+                <i class="fab fa-flutter" title="Flutter"></i>
+                <i class="fab fa-android" title="Android"></i>
+            </div>
             <h4>SafetyMojo</h4>
             <p><strong>Description:</strong> SafetyMojo is a workplace safety app designed for easy
                 safety audits, incident reporting, and policy management to ensure employee
@@ -501,6 +519,10 @@
 
         <!-- ElasticRun -->
         <div class="project-card">
+            <div class="tech-stack-icons">
+                <i class="fab fa-flutter" title="Flutter"></i>
+                <i class="fab fa-android" title="Android"></i>
+            </div>
             <h4>ElasticRun</h4>
             <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners to
                 order Kirana items with real-time pricing and offline functionality.</p>
@@ -516,43 +538,15 @@
             <p>Android Studio, GitHub, Jira, Figma</p>
         </div>
 
-        <!-- ElasticRun Sales -->
+        <!-- Velocity -->
         <div class="project-card">
-            <h4>ElasticRun Sales</h4>
-            <p><strong>Description:</strong> Mobile application for managing orders from shop owners
-                with features like tracking and delivery management.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Intuitive order management</li>
-                <li>Order tracking and notifications</li>
-                <li>Efficient sales management</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Flutter, Firebase, Dio, Google Maps</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub, Jira</p>
-        </div>
-
-        <!-- Velocity Duos -->
-        <div class="project-card">
-            <h4>Velocity Duos</h4>
-            <p><strong>Description:</strong> Built a trucking application for business development,
-                vendor management, and tracking shipments.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time GPS tracking for trucks</li>
-                <li>Vendor management and communication</li>
-                <li>Order tracking and delivery management</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>React Native, Realm DB, Google Sign-In, PDF generation</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, Visual Studio Code, GitHub</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Velocity - Android</h4>
-            <p><strong>Description:</strong> Developed an application customized for the trucking industry, addressing the needs of diverse roles such as business development, vendor management, ground operations, and managerial functions.</p>
+            <div class="tech-stack-icons">
+                <i class="fab fa-android" title="Android"></i>
+            </div>
+            <h4>Velocity</h4>
+            <p><strong>Description:</strong> Developed an application customized for the trucking
+                industry, addressing the needs of diverse roles such as business development, vendor
+                management, ground operations, and managerial functions.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>REALM Db integration for data management</li>
@@ -562,15 +556,24 @@
                 <li>PDF generation and chart components for reporting</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), REALM DB, Redux, File Manager, Scanner, Chat, Location Manager, Google Sign-In, PDF creation, JSON, and Chart Components</p>
+            <p>Android (Java), REALM DB, Redux, File Manager, Scanner, Chat, Location Manager,
+                Google Sign-In, PDF creation, JSON, and Chart Components</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira, Figma</p>
-            <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=truck.elastic.run.sancharun.field" target="_blank">Velocity App</a></p>
+            <p><strong>Play Store:</strong> <a
+                    href="https://play.google.com/store/apps/details?id=truck.elastic.run.sancharun.field"
+                    target="_blank">Velocity App</a></p>
         </div>
 
+        <!-- Driver App -->
         <div class="project-card">
-            <h4>Driver App - Android</h4>
-            <p><strong>Description:</strong> Developed a tracking application for drivers, enabling real-time location data retrieval during trips while in transit using the Worker Manager component.</p>
+            <div class="tech-stack-icons">
+                <i class="fab fa-android" title="Android"></i>
+            </div>
+            <h4>Driver App</h4>
+            <p><strong>Description:</strong> Developed a tracking application for drivers, enabling
+                real-time location data retrieval during trips while in transit using the Worker
+                Manager component.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Live database with MySQL for real-time tracking</li>
@@ -580,14 +583,21 @@
                 <li>Multitasking and efficient data handling</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), MySQL, Worker Manager, File Manager, Location Manager, JSON, GSON, Retrofit, PDF creation</p>
+            <p>Android (Java), MySQL, Worker Manager, File Manager, Location Manager, JSON, GSON,
+                Retrofit, PDF creation</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
         </div>
 
+        <!-- Patient App -->
         <div class="project-card">
-            <h4>Patient App - Android</h4>
-            <p><strong>Description:</strong> The Android Patient App collects sensor data from embedded devices via Bluetooth Low Energy (BLE), processes the data, and stores it locally and on a server using JSON/HTTPS protocols.</p>
+            <div class="tech-stack-icons">
+                <i class="fab fa-android" title="Android"></i>
+            </div>
+            <h4>Patient App</h4>
+            <p><strong>Description:</strong> The Android Patient App collects sensor data from
+                embedded devices via Bluetooth Low Energy (BLE), processes the data, and stores it
+                locally and on a server using JSON/HTTPS protocols.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Real-time data collection from BLE-enabled devices</li>
@@ -599,12 +609,20 @@
             <p>Android (Java), BLE, HTTP Client, JSON, GSON, Content Providers</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
-            <p><strong>Play Store:</strong> The client app is available exclusively to authorized users.</p>
+            <p><strong>Play Store:</strong> The client app is available exclusively to authorized
+                users.</p>
         </div>
 
+        <!-- Music Player - Android -->
         <div class="project-card">
+            <div class="tech-stack-icons">
+                <i class="fab fa-android" title="Android"></i>
+            </div>
             <h4>Music Player - Android</h4>
-            <p><strong>Description:</strong> Designed and developed a comprehensive local music player app, offering features like ringtone cutter, scheduled play, lyrics search, sleep timer, folder and song filters, karaoke recorder, Dubsmash integration, and more, focused on local music playback rather than streaming.</p>
+            <p><strong>Description:</strong> Designed and developed a comprehensive local music
+                player app, offering features like ringtone cutter, scheduled play, lyrics search,
+                sleep timer, folder and song filters, karaoke recorder, Dubsmash integration, and
+                more, focused on local music playback rather than streaming.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Local music playback and song management</li>
@@ -614,29 +632,14 @@
                 <li>Audio and video recording/editing</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), File Manager, JSON, GSON, Media Framework, Dubsmash, Video Recording, Audio Recording, Equalizer</p>
+            <p>Android (Java), File Manager, JSON, GSON, Media Framework, Dubsmash, Video Recording,
+                Audio Recording, Equalizer</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
-            <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq" target="_blank">Music Player App</a></p>
+            <p><strong>Play Store:</strong> <a
+                    href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq"
+                    target="_blank">Music Player App</a></p>
         </div>
-
-        <div class="project-card">
-            <h4>Home Automation - Embedded</h4>
-            <p><strong>Description:</strong> Developed a smart switch and plug point with nine sensors, UART, and a touch panel. The system processes data from all sensors and the touch panel, transferring it to the server using Ethernet and Wi-Fi with MQTT and HTTPS protocols.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time data processing from sensors</li>
-                <li>Smart switch and plug point control</li>
-                <li>Ethernet and Wi-Fi communication</li>
-                <li>Secure data transfer using MQTT and HTTPS</li>
-                <li>Responsive touch panel for user interface</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Embedded C, TI-RTOS, MQTT, HTTPS, UART, Sensors, Ethernet, Wi-Fi</p>
-            <h4>Tools Used:</h4>
-            <p>Embedded Studio, GitHub, Jira</p>
-        </div>
-
     </div>
 </div>
 
