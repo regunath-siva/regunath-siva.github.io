@@ -86,123 +86,6 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-.experience-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.experience-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    padding: 25px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.experience-card:hover {
-    transform: translateY(-8px);
-}
-
-.experience-header h3 {
-    font-size: 1.6rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.experience-header p {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 5px 0;
-}
-
-/* Tab Menu */
-.tab-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tab-button {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.tab-button:hover {
-    background-color: #008c9e;
-}
-
-.tab-button.active {
-    background-color: #007f8f;
-}
-
-/* Tab Content */
-.tab-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.tab-panel {
-    display: none;
-}
-
-.tab-panel.active {
-    display: block;
-}
-
-h4 {
-    color: #333;
-    font-size: 1.2rem;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
-    color: #555;
-}
-
-.experience-body {
-    margin-top: 20px;
-}
-
-.key-projects h4 {
-    font-size: 1.2rem;
-    color: #343a40;
-    margin-bottom: 10px;
-}
-
-.key-projects ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.key-projects li {
-    font-size: 1.1rem;
-    color: #495057;
-    padding-left: 20px;
-    position: relative;
-}
-
-.key-projects li::before {
-    content: "•";
-    color: #007bff;
-    position: absolute;
-    left: 0;
-    font-size: 1.5rem;
-    top: 0;
-}
 
         .section h2 {
             font-size: 32px;
@@ -210,88 +93,141 @@ ul li {
             text-align: center;
         }
 
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skill {
-            background-color: #333;
-            color: white;
-            padding: 12px 24px;
-            margin: 10px;
-            border-radius: 20px;
-            font-size: 18px;
-        }
-
         /* Experience Section */
-        .experience {
-            margin-top: 40px;
-        }
-        .tab-menu {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tab-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.tab-button.active {
-    background-color: #45a049;
-}
-
-.tab-content .tab-panel {
-    display: none;
-}
-
-.tab-content .tab-panel.active {
-    display: block;
-}
-
-        .role {
-            font-weight: bold;
-            font-size: 22px;
-            color: #444;
-            margin-top: 20px;
+        .experience-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        /* Projects Section */
-        .projects .project {
+        .experience-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #00bcd4;
+            transform: translateX(-50%);
+        }
+
+        .experience-card {
             background-color: #fff;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px 0;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .projects .project h3 {
-            font-size: 24px;
-            color: #444;
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background: #00bcd4;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .experience-card.left {
+            margin-right: 50%;
+        }
+
+        .experience-card.right {
+            margin-left: 50%;
+        }
+
+        .experience-header h3 {
+            font-size: 1.6rem;
+            color: #007bff;
             margin-bottom: 10px;
         }
 
-        .projects .project p {
-            font-size: 16px;
+        .experience-header p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .experience-body {
+            margin-top: 20px;
+        }
+
+        .key-projects h4 {
+            font-size: 1.2rem;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+
+        .key-projects ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-projects li {
+            font-size: 1.1rem;
+            color: #495057;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .key-projects li::before {
+            content: "•";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            top: 0;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h4 {
+            font-size: 1.4rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
             color: #555;
         }
 
-        .projects .project a {
-            color: #00bcd4;
-            text-decoration: none;
-            font-size: 16px;
+        .project-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
-        .projects .project a:hover {
-            text-decoration: underline;
+        .project-card ul li {
+            font-size: 1rem;
+            color: #555;
         }
 
         /* Footer */
@@ -313,7 +249,6 @@ ul li {
         footer .contact-links a:hover {
             color: #00bcd4;
         }
-
     </style>
 </head>
 <body>
@@ -367,7 +302,7 @@ ul li {
     <h2>Experience</h2>
     <div class="experience-container">
         <!-- Card 1 -->
-        <div class="experience-card">
+        <div class="experience-card left">
             <div class="experience-header">
                 <h3>Safetymojo</h3>
                 <p><strong>Sr. Mobile Developer</strong> | Jan 2024 – Dec 2024</p>
@@ -386,7 +321,7 @@ ul li {
         </div>
 
         <!-- Card 2 -->
-        <div class="experience-card">
+        <div class="experience-card right">
             <div class="experience-header">
                 <h3>ElasticRun</h3>
                 <p><strong>Lead Engineer</strong> | Apr 2022 – Current</p>
@@ -405,7 +340,7 @@ ul li {
         </div>
 
         <!-- Card 3 -->
-        <div class="experience-card">
+        <div class="experience-card left">
             <div class="experience-header">
                 <h3>Eoxys Systems India</h3>
                 <p><strong>Software Engineer</strong> | Jul 2015 – Jun 2018</p>
@@ -429,10 +364,8 @@ ul li {
 
 <div id="projects" class="section">
     <h2>Key Projects</h2>
-
-    <!-- Latest Project (SafetyMojo) -->
-    <div class="project-category">
-        <h3>Latest Organization: Sr. Mobile Developer</h3>
+    <div class="projects-grid">
+        <!-- SafetyMojo -->
         <div class="project-card">
             <h4>SafetyMojo</h4>
             <p><strong>Description:</strong> SafetyMojo is a workplace safety app designed for easy safety audits, incident reporting, and policy management to ensure employee well-being.</p>
@@ -447,12 +380,8 @@ ul li {
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
         </div>
-    </div>
 
-    <!-- ElasticRun and ElasticRun Sales Projects -->
-    <div class="project-category">
-        <h3>ElasticRun (Lead Engineer)</h3>
-
+        <!-- ElasticRun -->
         <div class="project-card">
             <h4>ElasticRun</h4>
             <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners to order Kirana items with real-time pricing and offline functionality.</p>
@@ -468,6 +397,7 @@ ul li {
             <p>Android Studio, GitHub, Jira, Figma</p>
         </div>
 
+        <!-- ElasticRun Sales -->
         <div class="project-card">
             <h4>ElasticRun Sales</h4>
             <p><strong>Description:</strong> Mobile application for managing orders from shop owners with features like tracking and delivery management.</p>
@@ -482,12 +412,8 @@ ul li {
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
         </div>
-    </div>
 
-    <!-- Velocity Projects -->
-    <div class="project-category">
-        <h3>Velocity (Software Engineer)</h3>
-
+        <!-- Velocity Duos -->
         <div class="project-card">
             <h4>Velocity Duos</h4>
             <p><strong>Description:</strong> Built a trucking application for business development, vendor management, and tracking shipments.</p>
@@ -502,122 +428,8 @@ ul li {
             <h4>Tools Used:</h4>
             <p>Android Studio, Visual Studio Code, GitHub</p>
         </div>
-
-        <div class="project-card">
-            <h4>Velocity</h4>
-            <p><strong>Description:</strong> A comprehensive application for trucking businesses offering real-time tracking and shipment management.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time trip and shipment tracking</li>
-                <li>Route optimization</li>
-                <li>Order and delivery management</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Android, Realm DB, Redux, Location Manager</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Driver App</h4>
-            <p><strong>Description:</strong> Developed a mobile application for truck drivers with real-time tracking and communication features.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Live tracking and route management</li>
-                <li>Delivery updates and notifications</li>
-                <li>Real-time communication with dispatchers</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Android, MySQL, Worker Manager, JSON, Retrofit</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub, Firebase</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Mobile Kirana</h4>
-            <p><strong>Description:</strong> E-commerce platform for Kirana shop owners with functionalities like real-time pricing and sales tracking.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time pricing and offers</li>
-                <li>Order and inventory management</li>
-                <li>Secure and easy payment integration</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>React Native, Realm Database, Redux, OTP login</p>
-            <h4>Tools Used:</h4>
-            <p>Visual Studio Code, GitHub, Jira</p>
-        </div>
     </div>
-
-    <!-- Eoxys Projects -->
-    <div class="project-category">
-        <h3>Eoxys (Software Engineer)</h3>
-
-        <div class="project-card">
-            <h4>Patient App</h4>
-            <p><strong>Description:</strong> Built a mobile application for collecting sensor data from medical devices via Bluetooth Low Energy (BLE) and storing it on a server.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time sensor data collection</li>
-                <li>Cloud and local storage</li>
-                <li>BLE integration for device communication</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Android, BLE, JSON, GSON</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Music Player</h4>
-            <p><strong>Description:</strong> Developed a local music player app with features like ringtone cutter, scheduled play, and lyrics search.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Local music playback</li>
-                <li>Ringtone cutter and sleep timer</li>
-                <li>Karaoke recording and integration with Dubsmash</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Android, Media Framework, JSON, GSON</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Home Automation</h4>
-            <p><strong>Description:</strong> Designed a smart home automation app that integrates with IoT devices for controlling lights, fans, and more using real-time sensors.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Real-time sensor data processing</li>
-                <li>MQTT protocol for IoT integration</li>
-                <li>Control smart devices remotely</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Embedded Systems, MQTT, HTTPS, TI-RTOS</p>
-            <h4>Tools Used:</h4>
-            <p>Embedded Studio, GitHub</p>
-        </div>
-
-        <div class="project-card">
-            <h4>Patent App</h4>
-            <p><strong>Description:</strong> Developed a patent management app for searching and tracking patent applications and managing related documents.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Patent search and tracking</li>
-                <li>Document generation (PDF)</li>
-                <li>Secure user authentication</li>
-            </ul>
-            <h4>Development Stack:</h4>
-            <p>Android, SQLite, Retrofit</p>
-            <h4>Tools Used:</h4>
-            <p>Android Studio, GitHub</p>
-        </div>
-    </div>
-
 </div>
-
-
-
 
 <footer>
     <div class="contact-links">
@@ -627,22 +439,6 @@ ul li {
     </div>
     <p>© 2025 Sivanandham R. All Rights Reserved.</p>
 </footer>
-<!-- JavaScript -->
-<script>
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', () => {
-            // Deactivate all tabs
-            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
-            button.classList.add('active');
 
-            // Deactivate all tab panels
-            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
-
-            // Activate the corresponding tab panel
-            const tabId = button.getAttribute('data-tab');
-            document.getElementById(tabId).classList.add('active');
-        });
-    });
-</script>
 </body>
 </html>
