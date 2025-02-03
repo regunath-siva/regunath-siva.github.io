@@ -347,6 +347,84 @@
             margin: 0;
             font-size: 16px;
         }
+        .experience-separator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .separator-line {
+            flex: 1;
+            height: 2px;
+            background-color: #e0e0e0;
+        }
+
+        .separator-icon {
+            margin: 0 15px;
+            color: #ff9800; /* Orange color for the icon */
+            font-size: 18px;
+        }
+
+        .certifications-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .certifications-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #ff9800;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .certification-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .certification-logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .certification-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .certification-details {
+            flex: 1;
+        }
+
+        .certification-details h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .certification-details p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .certification-details i {
+            margin-right: 8px;
+            color: #ff9800;
+        }
     </style>
 </head>
 <body>
@@ -445,6 +523,12 @@
                     </ul>
                 </div>
             </div>
+            <!-- UI Separator -->
+            <div class="experience-separator">
+                <div class="separator-line"></div>
+                <div class="separator-icon"><i class="fas fa-star"></i></div>
+                <div class="separator-line"></div>
+            </div>
             <div class="experience-header">
                 <p><strong>Software Engineer</strong> | <i class="fas fa-calendar-alt"></i> Jul 2018 – Dec 2021</p>
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
@@ -516,7 +600,7 @@
         <div class="project-card">
             <div class="tech-stack-icons">
                 <img src="icons8-flutter-48.png" alt="Flutter Logo" width="36">
-                <i class="fab fa-react" style="font-size: 36px;" title="React Native"></i>
+                <i class="fab fa-android" style="font-size: 36px;" title="React Native"></i>
             </div>
             <h4>ElasticRun</h4>
             <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners to
@@ -635,6 +719,37 @@
             <p><strong>Play Store:</strong> <a
                     href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq"
                     target="_blank">Music Player App</a></p>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="certifications-section">
+        <h2>Licenses & Certifications</h2>
+
+        <!-- Certification 1 -->
+        <div class="certification-card">
+            <div class="certification-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+            </div>
+            <div class="certification-details">
+                <h3>Dart Clean Code: Writing High-Efficiency, Maintainable Dart Programs</h3>
+                <p><strong>Issued By:</strong> LinkedIn</p>
+                <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
+                <p><strong>Skill:</strong> Dart</p>
+            </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certification-card">
+            <div class="certification-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+            </div>
+            <div class="certification-details">
+                <h3>Flutter Essential Training: Build for Multiple Platforms</h3>
+                <p><strong>Issued By:</strong> LinkedIn</p>
+                <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
+                <p><strong>Skill:</strong> Flutter</p>
+            </div>
         </div>
     </div>
 </div>
