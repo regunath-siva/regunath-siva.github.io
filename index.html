@@ -4,434 +4,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sivanandham R - Lead Engineer</title>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-          rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f9;
+          color: #333;
         }
 
         h1, h2, h3 {
-            color: #222;
-            margin-bottom: 10px;
+          color: #222;
+          margin-bottom: 10px;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 10px 0;
+          font-size: 18px;
+          line-height: 1.6;
+          margin: 10px 0;
         }
 
         /* Header Section */
-         header {
-            background: linear-gradient(135deg, #00bcd4, #007bff);
-            color: #fff;
-            text-align: center;
-            padding: 80px 20px;
-            position: relative;
-            overflow: hidden;
+        header {
+          background: linear-gradient(135deg, #00bcd4, #007bff);
+          color: #fff;
+          text-align: center;
+          padding: 80px 20px;
+          position: relative;
+          overflow: hidden;
         }
 
         header .profile {
-            margin-bottom: 20px;
+          margin-bottom: 20px;
         }
 
         header .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          object-position: top center; /* Ensures the top part (head) is visible */
+          border: 4px solid #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
         }
 
         header .profile img:hover {
-            transform: scale(1.1);
+          transform: scale(1.1);
         }
 
         header h1 {
-            font-size: 42px;
-            margin: 20px 0;
-            font-weight: 600;
+          font-size: 42px;
+          margin: 20px 0;
+          font-weight: 600;
         }
 
         header .contact-info {
-            font-size: 18px;
+          font-size: 18px;
         }
 
         header .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease;
         }
 
         header .contact-info a:hover {
-            color: #00bcd4;
+          color: #00bcd4;
         }
 
         /* Navbar Styles */
-         .nav-bar {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 15px;
-            margin-bottom: 40px;
+        .nav-bar {
+          display: flex;
+          justify-content: center;
+          background-color: #444;
+          padding: 15px;
+          margin-bottom: 40px;
         }
 
         .nav-bar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
+          color: white;
+          text-decoration: none;
+          margin: 0 20px;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: color 0.3s ease;
         }
 
         .nav-bar a:hover {
-            color: #00bcd4;
+          color: #00bcd4;
         }
 
         /* Section Styles */
         .section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+          padding: 60px 20px;
+          max-width: 1200px;
+          margin: 0 auto;
         }
 
         .section h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
-            text-align: center;
-            color: #007bff;
-        }/* About Me Section */
+          font-size: 32px;
+          margin-bottom: 30px;
+          text-align: center;
+          color: #007bff;
+        }
+
+        /* About Me Section */
         .about-me-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            max-width: 800px;
-            margin: 0 auto;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+          max-width: 800px;
+          margin: 0 auto;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .about-me-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .about-me-card p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
+          font-size: 18px;
+          line-height: 1.8;
+          color: #555;
         }
 
         /* Skills Section */
         .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
         }
 
         .skill {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+          background-color: #007bff;
+          color: white;
+          padding: 12px 24px;
+          border-radius: 25px;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
+        /* Ensure SVG/IMG icons inside .skill display in white */
         .skill img {
-          filter: invert(1) brightness(0) !important; /* Inverts the colors and makes them white */
+          filter: brightness(0) invert(1); /* Converts icon to white */
         }
+
         .skill i {
-            color: white;
-            font-size: 20px;
+          color: white;
+          font-size: 20px;
         }
 
         .skill:hover {
-            transform: translateY(-5px);
-            background-color: #0056b3;
+          transform: translateY(-5px);
+          background-color: #0056b3;
         }
 
         /* Experience Section */
         .experience-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
+          position: relative;
+          max-width: 800px;
+          margin: 0 auto;
         }
 
         .experience-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: #00bcd4;
-            transform: translateX(-50%);
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 2px;
+          height: 100%;
+          background: #00bcd4;
+          transform: translateX(-50%);
         }
 
         .experience-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-            margin: 20px 0;
-            position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 25px;
+          margin: 20px 0;
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .experience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .experience-card::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: -10px;
-            width: 20px;
-            height: 20px;
-            background: #00bcd4;
-            border-radius: 50%;
-            z-index: 1;
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: -10px;
+          width: 20px;
+          height: 20px;
+          background: #00bcd4;
+          border-radius: 50%;
+          z-index: 1;
         }
 
         .experience-card.left {
-            margin-right: 50%;
+          margin-right: 50%;
         }
 
         .experience-card.right {
-            margin-left: 50%;
+          margin-left: 50%;
         }
 
         .experience-header h3 {
-            font-size: 1.6rem;
-            color: #007bff;
-            margin-bottom: 10px;
+          font-size: 1.6rem;
+          color: #007bff;
+          margin-bottom: 10px;
         }
 
         .experience-header p {
-            font-size: 1.1rem;
-            color: #555;
-            margin: 5px 0;
+          font-size: 1.1rem;
+          color: #555;
+          margin: 5px 0;
         }
 
         .experience-body {
-            margin-top: 20px;
+          margin-top: 20px;
         }
 
         .key-projects h4 {
-            font-size: 1.2rem;
-            color: #343a40;
-            margin-bottom: 10px;
+          font-size: 1.2rem;
+          color: #343a40;
+          margin-bottom: 10px;
         }
 
         .key-projects ul {
-            list-style-type: none;
-            padding-left: 0;
+          list-style-type: none;
+          padding-left: 0;
         }
 
         .key-projects li {
-            font-size: 1.1rem;
-            color: #495057;
-            padding-left: 20px;
-            position: relative;
+          font-size: 1.1rem;
+          color: #495057;
+          padding-left: 20px;
+          position: relative;
         }
 
         .key-projects li::before {
-            content: "•";
-            color: #007bff;
-            position: absolute;
-            left: 0;
-            font-size: 1.5rem;
-            top: 0;
+          content: "•";
+          color: #007bff;
+          position: absolute;
+          left: 0;
+          font-size: 1.5rem;
+          top: 0;
         }
 
         /* Projects Section */
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
         }
 
         .project-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          position: relative;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .project-card h4 {
-            font-size: 1.4rem;
-            color: #007bff;
-            margin-bottom: 10px;
+          font-size: 1.4rem;
+          color: #007bff;
+          margin-bottom: 10px;
         }
 
         .project-card p {
-            font-size: 1rem;
-            color: #555;
+          font-size: 1rem;
+          color: #555;
         }
 
         .project-card ul {
-            list-style-type: disc;
-            padding-left: 20px;
+          list-style-type: disc;
+          padding-left: 20px;
         }
 
         .project-card ul li {
-            font-size: 1rem;
-            color: #555;
-        }
-        .tech-stack-icons {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            display: flex;
-            gap: 5px;
+          font-size: 1rem;
+          color: #555;
         }
 
-        .project-card {
-            position: relative; /* Ensure icons are positioned relative to the card */
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin-bottom: 20px;
+        .tech-stack-icons {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: flex;
+          gap: 5px;
         }
+
         /* Footer Section */
         footer {
-            background: linear-gradient(135deg, #007bff, #00bcd4);
-            color: #fff;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 50px;
+          background: linear-gradient(135deg, #007bff, #00bcd4);
+          color: #fff;
+          text-align: center;
+          padding: 40px 20px;
+          margin-top: 50px;
         }
 
         footer .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 20px;
         }
 
         footer .contact-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            transition: color 0.3s ease;
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          transition: color 0.3s ease;
         }
 
         footer .contact-links a:hover {
-            color: #00bcd4;
+          color: #00bcd4;
         }
 
         footer p {
-            margin: 0;
-            font-size: 16px;
+          margin: 0;
+          font-size: 16px;
         }
+
+        /* Experience Separator */
         .experience-separator {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px 0;
         }
 
         .separator-line {
-            flex: 1;
-            height: 2px;
-            background-color: #e0e0e0;
+          flex: 1;
+          height: 2px;
+          background-color: #e0e0e0;
         }
 
         .separator-icon {
-            margin: 0 15px;
-            color: #ff9800; /* Orange color for the icon */
-            font-size: 18px;
+          margin: 0 15px;
+          color: #ff9800; /* Orange color for the icon */
+          font-size: 18px;
         }
 
+        /* Certifications Section */
         .certifications-section {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-top: 40px;
+          padding: 20px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .certifications-section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-            border-bottom: 2px solid #ff9800;
-            display: inline-block;
-            padding-bottom: 5px;
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #333;
+          border-bottom: 2px solid #ff9800;
+          display: inline-block;
+          padding-bottom: 5px;
         }
 
         .certification-card {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          padding: 15px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .certification-logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
+          width: 50px;
+          height: 50px;
+          margin-right: 15px;
         }
 
         .certification-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
 
         .certification-details {
-            flex: 1;
+          flex: 1;
         }
 
         .certification-details h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #333;
+          font-size: 18px;
+          margin-bottom: 10px;
+          color: #333;
         }
 
         .certification-details p {
-            font-size: 14px;
-            color: #666;
-            margin: 5px 0;
+          font-size: 14px;
+          color: #666;
+          margin: 5px 0;
         }
 
         .certification-details i {
-            margin-right: 8px;
-            color: #ff9800;
+          margin-right: 8px;
+          color: #ff9800;
         }
 
-         .certification-skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        /* Certification Skills: Reduce font size & padding for a smaller appearance */
+        .certification-skills-container .skill {
+          font-size: 16px;
+          padding: 8px 16px;
         }
     </style>
 </head>
@@ -444,8 +447,7 @@
         <p>Lead Engineer | Technical Lead</p>
         <p>Saidapet, Chennai, India</p>
         <div class="contact-info">
-            <p>Mobile: <a href="tel:+918771474161">+91 8771474161</a> | Email: <a
-                    href="mailto:regunathsiva@gmail.com">regunathsiva@gmail.com</a></p>
+            <p>Mobile: <a href="tel:+918771474161">+91 8771474161</a> | Email: <a href="mailto:regunathsiva@gmail.com">regunathsiva@gmail.com</a></p>
         </div>
     </div>
 </header>
@@ -462,12 +464,7 @@
     <h2>About Me</h2>
     <div class="about-me-card">
         <p>
-            Experienced Lead Engineer with over 9.5 years in mobile application development,
-            including 3 years in Flutter and 6.5 years in Native Android and React Native.
-            Adept at designing, developing, and maintaining scalable, cross-platform, and
-            user-centric mobile solutions. Proven expertise in leading teams, delivering
-            high-quality projects on time,
-            and excelling in fast-paced environments like e-commerce and safety management.
+            Experienced Lead Engineer with over 9.5 years in mobile application development, including 3 years in Flutter and 6.5 years in Native Android and React Native. Adept at designing, developing, and maintaining scalable, cross-platform, and user-centric mobile solutions. Proven expertise in leading teams, delivering high-quality projects on time, and excelling in fast-paced environments like e-commerce and safety management.
         </p>
     </div>
 </div>
@@ -475,9 +472,13 @@
 <div id="skills" class="section">
     <h2>Skills</h2>
     <div class="skills-container">
-        <div class="skill"><img src="flutterio-icon.svg" width="20" height="20" style="fill: white;" alt="Icon 1" /> Flutter
+        <div class="skill">
+            <img src="flutterio-icon.svg" alt="Flutter Logo" width="20" height="20">
+            Flutter
         </div>
-        <div class="skill"><img src="dartlang-icon.svg" width="20" height="20" style="fill: white;" alt="Icon 1" /> Dart
+        <div class="skill">
+            <img src="dartlang-icon.svg" alt="Dart Logo" width="20" height="20">
+            Dart
         </div>
         <div class="skill"><i class="fab fa-android"></i>Android</div>
         <div class="skill"><i class="fas fa-mobile-alt"></i> Mobile Enterprise</div>
@@ -502,9 +503,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Remote</p>
             </div>
             <div class="experience-body">
-                <p>Led a team of 3 developers to deliver cross-platform safety management apps using
-                    Flutter. Conducted code reviews, sprint planning, and requirement grooming to
-                    ensure smooth deliveries.</p>
+                <p>Led a team of 3 developers to deliver cross-platform safety management apps using Flutter. Conducted code reviews, sprint planning, and requirement grooming to ensure smooth deliveries.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -523,8 +522,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Specialized in leading mobile development teams, focusing on Flutter for
-                    large-scale e-commerce platforms and ensuring high-quality deliverables.</p>
+                <p>Specialized in leading mobile development teams, focusing on Flutter for large-scale e-commerce platforms and ensuring high-quality deliverables.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -544,9 +542,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Delivered scalable React Native and Android apps, focusing on e-commerce and
-                    trucking industries. Integrated features like real-time tracking, OTP login, and
-                    chat functionality.</p>
+                <p>Delivered scalable React Native and Android apps, focusing on e-commerce and trucking industries. Integrated features like real-time tracking, OTP login, and chat functionality.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -565,9 +561,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Worked on Android development, focusing on app optimization, third-party API
-                    integration, and app publishing processes. Led several key projects,
-                    contributing to the company’s success in mobile applications.</p>
+                <p>Worked on Android development, focusing on app optimization, third-party API integration, and app publishing processes. Led several key projects, contributing to the company’s success in mobile applications.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -581,7 +575,6 @@
     </div>
 </div>
 
-
 <div id="projects" class="section">
     <h2>Key Projects</h2>
     <div class="projects-grid">
@@ -591,9 +584,7 @@
                 <img src="icons8-flutter-48.png" alt="Flutter Logo" width="36">
             </div>
             <h4>SafetyMojo</h4>
-            <p><strong>Description:</strong> SafetyMojo is a workplace safety app designed for easy
-                safety audits, incident reporting, and policy management to ensure employee
-                well-being.</p>
+            <p><strong>Description:</strong> SafetyMojo is a workplace safety app designed for easy safety audits, incident reporting, and policy management to ensure employee well-being.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Incident tracking and reporting</li>
@@ -613,8 +604,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="React Native"></i>
             </div>
             <h4>ElasticRun</h4>
-            <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners to
-                order Kirana items with real-time pricing and offline functionality.</p>
+            <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners to order Kirana items with real-time pricing and offline functionality.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Real-time pricing and promotions</li>
@@ -634,9 +624,7 @@
                 <i class="fab fa-react" style="font-size: 36px;" title="React Native"></i>
             </div>
             <h4>Velocity</h4>
-            <p><strong>Description:</strong> Developed an application customized for the trucking
-                industry, addressing the needs of diverse roles such as business development, vendor
-                management, ground operations, and managerial functions.</p>
+            <p><strong>Description:</strong> Developed an application customized for the trucking industry, addressing the needs of diverse roles such as business development, vendor management, ground operations, and managerial functions.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>REALM Db integration for data management</li>
@@ -646,13 +634,10 @@
                 <li>PDF generation and chart components for reporting</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), REALM DB, Redux, File Manager, Scanner, Chat, Location Manager,
-                Google Sign-In, PDF creation, JSON, and Chart Components</p>
+            <p>Android (Java), REALM DB, Redux, File Manager, Scanner, Chat, Location Manager, Google Sign-In, PDF creation, JSON, and Chart Components</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira, Figma</p>
-            <p><strong>Play Store:</strong> <a
-                    href="https://play.google.com/store/apps/details?id=truck.elastic.run.sancharun.field"
-                    target="_blank">Velocity App</a></p>
+            <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=truck.elastic.run.sancharun.field" target="_blank">Velocity App</a></p>
         </div>
 
         <!-- Driver App -->
@@ -661,9 +646,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Driver App</h4>
-            <p><strong>Description:</strong> Developed a tracking application for drivers, enabling
-                real-time location data retrieval during trips while in transit using the Worker
-                Manager component.</p>
+            <p><strong>Description:</strong> Developed a tracking application for drivers, enabling real-time location data retrieval during trips while in transit using the Worker Manager component.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Live database with MySQL for real-time tracking</li>
@@ -673,8 +656,7 @@
                 <li>Multitasking and efficient data handling</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), MySQL, Worker Manager, File Manager, Location Manager, JSON, GSON,
-                Retrofit, PDF creation</p>
+            <p>Android (Java), MySQL, Worker Manager, File Manager, Location Manager, JSON, GSON, Retrofit, PDF creation</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
         </div>
@@ -685,9 +667,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Patient App</h4>
-            <p><strong>Description:</strong> The Android Patient App collects sensor data from
-                embedded devices via Bluetooth Low Energy (BLE), processes the data, and stores it
-                locally and on a server using JSON/HTTPS protocols.</p>
+            <p><strong>Description:</strong> The Android Patient App collects sensor data from embedded devices via Bluetooth Low Energy (BLE), processes the data, and stores it locally and on a server using JSON/HTTPS protocols.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Real-time data collection from BLE-enabled devices</li>
@@ -699,8 +679,7 @@
             <p>Android (Java), BLE, HTTP Client, JSON, GSON, Content Providers</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
-            <p><strong>Play Store:</strong> The client app is available exclusively to authorized
-                users.</p>
+            <p><strong>Play Store:</strong> The client app is available exclusively to authorized users.</p>
         </div>
 
         <!-- Music Player - Android -->
@@ -709,10 +688,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Music Player - Android</h4>
-            <p><strong>Description:</strong> Designed and developed a comprehensive local music
-                player app, offering features like ringtone cutter, scheduled play, lyrics search,
-                sleep timer, folder and song filters, karaoke recorder, Dubsmash integration, and
-                more, focused on local music playback rather than streaming.</p>
+            <p><strong>Description:</strong> Designed and developed a comprehensive local music player app, offering features like ringtone cutter, scheduled play, lyrics search, sleep timer, folder and song filters, karaoke recorder, Dubsmash integration, and more, focused on local music playback rather than streaming.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Local music playback and song management</li>
@@ -722,20 +698,16 @@
                 <li>Audio and video recording/editing</li>
             </ul>
             <h4>Development Stack:</h4>
-            <p>Android (Java), File Manager, JSON, GSON, Media Framework, Dubsmash, Video Recording,
-                Audio Recording, Equalizer</p>
+            <p>Android (Java), File Manager, JSON, GSON, Media Framework, Dubsmash, Video Recording, Audio Recording, Equalizer</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
-            <p><strong>Play Store:</strong> <a
-                    href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq"
-                    target="_blank">Music Player App</a></p>
+            <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq" target="_blank">Music Player App</a></p>
         </div>
     </div>
 
     <!-- Certifications Section -->
     <div class="certifications-section">
         <h2>Licenses & Certifications</h2>
-
         <!-- Certification 1 -->
         <div class="certification-card">
             <div class="certification-logo">
@@ -747,11 +719,10 @@
                 <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
                 <div class="certification-skills-container">
                     <div class="skill">Flutter</div>
-                    <div class="skill"> Dart</div>
+                    <div class="skill">Dart</div>
                 </div>
             </div>
         </div>
-
         <!-- Certification 2 -->
         <div class="certification-card">
             <div class="certification-logo">
@@ -763,7 +734,7 @@
                 <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
                 <div class="certification-skills-container">
                     <div class="skill">Flutter</div>
-                    <div class="skill"> Dart</div>
+                    <div class="skill">Dart</div>
                 </div>
             </div>
         </div>
@@ -772,8 +743,7 @@
 
 <footer id="contact">
     <div class="contact-links">
-        <a href="https://www.linkedin.com/in/sivanandham-r/" target="_blank"><i
-                class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.linkedin.com/in/sivanandham-r/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="mailto:regunathsiva@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="tel:+918771474161"><i class="fas fa-phone"></i> Phone</a>
     </div>
