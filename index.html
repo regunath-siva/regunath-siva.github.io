@@ -154,7 +154,9 @@
             gap: 10px;
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
-
+        .skill img {
+          filter: invert(1) brightness(0) !important; /* Inverts the colors and makes them white */
+        }
         .skill i {
             color: white;
             font-size: 20px;
@@ -467,7 +469,9 @@
 <div id="skills" class="section">
     <h2>Skills</h2>
     <div class="skills-container">
-        <div class="skill"><img src="icons8-flutter-48.png" alt="Flutter Logo" width="20"> Flutter
+        <div class="skill"><img src="flutter_logo.svg" alt="Flutter Logo" width="20"> Flutter
+        </div>
+        <div class="skill"><img src="dart_logo.svg" alt="Flutter Logo" width="20"> Dart
         </div>
         <div class="skill"><i class="fab fa-android"></i>Android</div>
         <div class="skill"><i class="fas fa-mobile-alt"></i> Mobile Enterprise</div>
@@ -735,7 +739,12 @@
                 <h3>Dart Clean Code: Writing High-Efficiency, Maintainable Dart Programs</h3>
                 <p><strong>Issued By:</strong> LinkedIn</p>
                 <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
-                <p><strong>Skill:</strong> Dart</p>
+                <div class="skills-container">
+                    <div class="skill"><img src="flutter_logo.svg" alt="Flutter Logo" width="20"> Flutter
+                    </div>
+                    <div class="skill"><img src="dart_logo.svg" alt="Flutter Logo" width="20"> Dart
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -748,7 +757,12 @@
                 <h3>Flutter Essential Training: Build for Multiple Platforms</h3>
                 <p><strong>Issued By:</strong> LinkedIn</p>
                 <p><i class="fas fa-calendar-alt"></i> Issued Jan 2025</p>
-                <p><strong>Skill:</strong> Flutter</p>
+                <div class="skills-container">
+                    <div class="skill"><img src="flutter_logo.svg" alt="Flutter Logo" width="20"> Flutter
+                    </div>
+                    <div class="skill"><img src="dart_logo.svg" alt="Flutter Logo" width="20"> Dart
+                    </div>
+                </div>
             </div>
         </div>
     </div>
