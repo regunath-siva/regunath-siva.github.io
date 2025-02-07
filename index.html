@@ -305,7 +305,7 @@
           color: #00bcd4;
         }
         footer p {
-          margin: 0;
+          margin: 20px;
           font-size: 16px;
         }
         /* Experience Separator */
@@ -437,7 +437,48 @@
         .about-me-card strong {
           color: #2196f3;
         }
-        /* Media Queries for Mobile Devices */
+        .resume-button {
+        display: inline-block;
+        padding: 12px 12px;
+        font-size: 18px;
+        color: #007bff; /* Blue text to match the theme */
+        background: #fff; /* White background for contrast */
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        border: 2px solid #fff; /* White border */
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+    .resume-button i {
+        margin-right: 8px;
+    }
+
+    .resume-button:hover {
+        background: #ff9800; /* Orange hover for better contrast */
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+
+        /* References Section */
+        #references {
+          padding: 40px 20px;
+          background: #fff;
+          border-top: 2px solid #00bcd4;
+          margin-top: 40px;
+          text-align: center;
+        }
+        #references h2 {
+          font-size: 32px;
+          color: #007bff;
+          margin-bottom: 20px;
+        }
+        #references p {
+          font-size: 1.1rem;
+          color: #555;
+        }
+        /* Mobile Adjustments */
         @media (max-width: 768px) {
           header {
             padding: 40px 10px;
@@ -456,13 +497,12 @@
           .section {
             padding: 40px 10px;
           }
-          /* Experience Section on Mobile: Cards should occupy most of the width */
           .experience-container {
             max-width: 100%;
             padding: 0 10px;
           }
           .experience-container::before {
-            display: none; /* Hide vertical timeline on mobile */
+            display: none;
           }
           .experience-card.left,
           .experience-card.right {
@@ -482,6 +522,13 @@
         <div class="contact-info">
             <p>Mobile: <a href="tel:+917871474161">+91 7871474161</a> | Email: <a href="mailto:regunathsiva@gmail.com">regunathsiva@gmail.com</a></p>
         </div>
+        <div class="resume-download">
+            <a href="assets/Sivanandham_FlutterLead_9yrs.pdf" download class="resume-button">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+
+
     </div>
 </header>
 
@@ -490,24 +537,19 @@
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#references">References</a>
     <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
 </div>
 
 <div id="about" class="section">
     <h2>About Me</h2>
     <div class="about-me-card">
         <p class="highlight">
-            I’m <strong>Sivanandham R</strong>, a <strong>Lead Engineer</strong> with <strong>9.5+ years</strong> of experience in mobile app development, specializing in <strong>Flutter, Android, and React Native</strong>. I excel at building scalable, cross-platform, and user-centric solutions, with a proven track record of leading teams and delivering high-quality projects in fast-paced environments like <strong>e-commerce</strong> and <strong>safety management</strong>.
+            I’m <strong>Sivanandham R</strong>, a <strong>Lead Engineer</strong> with <strong>9.5+ years</strong> of experience in mobile app development, specializing in <strong>Flutter, Android, and React Native</strong>. I excel at building scalable, cross-platform, user-centric solutions and leading teams in fast-paced environments.
         </p>
         <p>
-            My expertise includes <strong>state management (BLoC, Provider)</strong>, <strong>API integration (RESTful, GraphQL)</strong>, <strong>CI/CD pipelines</strong>, and <strong>performance optimization</strong>. I’ve led teams to develop real-time safety monitoring apps with <strong>Conversational AI</strong> at <strong>Safetymojo</strong> and designed e-commerce apps with secure payment gateways and offline support at <strong>Elasticrun</strong>.
-        </p>
-        <p>
-            Proficient in <strong>Dart, Java, JavaScript, and TypeScript</strong>, I’m skilled in tools like <strong>Android Studio, Visual Studio Code, GitHub, Jira, and Figma</strong>. I hold a <strong>Bachelor’s degree in Electronics and Communication</strong> and certifications in <strong>Flutter</strong> and <strong>Dart Clean Code</strong>.
-        </p>
-        <p>
-            Passionate about innovation, I enjoy mentoring developers and exploring new technologies. Let’s collaborate and create impactful solutions!
+            I hold a <strong>Bachelor’s degree in Electronics and Communication</strong> along with certifications in <strong>Flutter</strong> and <strong>Dart Clean Code</strong>. <em>References available upon request.</em>
         </p>
         <p class="call-to-action">
             Let’s collaborate and create something amazing! <strong>Connect with me</strong> to bring your ideas to life.
@@ -549,7 +591,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Remote</p>
             </div>
             <div class="experience-body">
-                <p>Led a team of 3 developers to deliver cross-platform safety management apps using Flutter. Conducted code reviews, sprint planning, and requirement grooming to ensure smooth deliveries.</p>
+                <p>Led a team of 3 developers to deliver cross-platform safety management apps using Flutter. Conducted code reviews, sprint planning, and requirement grooming for smooth deliveries.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -568,7 +610,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Specialized in leading mobile development teams, focusing on Flutter for large-scale e-commerce platforms and ensuring high-quality deliverables.</p>
+                <p>Specialized in leading mobile development teams focused on Flutter for large-scale e-commerce platforms, ensuring high-quality deliverables.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -588,12 +630,12 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Delivered scalable React Native and Android apps, focusing on e-commerce and trucking industries. Integrated features like real-time tracking, OTP login, and chat functionality.</p>
+                <p>Delivered scalable React Native and Android apps for the e-commerce and trucking industries with features like real-time tracking and OTP login.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
-                        <li>Mobile Kirana & Velocity Duos– React Native</li>
-                        <li>Velocity & Driver App – Android</li>
+                        <li>Mobile Kirana &amp; Velocity Duos – React Native</li>
+                        <li>Velocity &amp; Driver App – Android</li>
                     </ul>
                 </div>
             </div>
@@ -607,7 +649,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             </div>
             <div class="experience-body">
-                <p>Worked on Android development, focusing on app optimization, third-party API integration, and app publishing processes. Led several key projects, contributing to the company’s success in mobile applications.</p>
+                <p>Worked on Android development focusing on app optimization, third-party API integration, and app publishing processes, leading key projects that contributed to the company’s success.</p>
                 <div class="key-projects">
                     <h4>Key Projects:</h4>
                     <ul>
@@ -629,8 +671,8 @@
             <div class="tech-stack-icons">
                 <img src="icons8-flutter-48.png" alt="Flutter Logo" width="36">
             </div>
-            <h4>SafetyMojo & AGC Fast Facts 2.0</h4>
-            <p><strong>Description:</strong> SafetyMojo is a workplace safety app designed for easy safety audits, incident reporting, and policy management to ensure employee well-being.</p>
+            <h4>SafetyMojo &amp; AGC Fast Facts 2.0</h4>
+            <p><strong>Description:</strong> A workplace safety app designed for easy safety audits, incident reporting, and policy management.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Incident tracking and reporting</li>
@@ -651,8 +693,8 @@
                 <img src="icons8-flutter-48.png" alt="Flutter Logo" width="36">
                 <i class="fab fa-android" style="font-size: 36px;" title="React Native"></i>
             </div>
-            <h4>ElasticRun Customer & Sales App</h4>
-            <p><strong>Description:</strong> Developed an e-commerce mobile app for shop owners and sales personnel to order Kirana items with real-time pricing and offline functionality.</p>
+            <h4>ElasticRun Customer &amp; Sales App</h4>
+            <p><strong>Description:</strong> An e-commerce mobile app for shop owners and sales personnel to order Kirana items with real-time pricing and offline functionality.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Real-time pricing and promotions</li>
@@ -673,8 +715,8 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
                 <i class="fab fa-react" style="font-size: 36px;" title="React Native"></i>
             </div>
-            <h4>Velocity & Velocity Duos</h4>
-            <p><strong>Description:</strong> Developed an application customized for the trucking industry, addressing the needs of diverse roles such as business development, vendor management, ground operations, and managerial functions.</p>
+            <h4>Velocity &amp; Velocity Duos</h4>
+            <p><strong>Description:</strong> An application customized for the trucking industry addressing diverse roles such as business development and vendor management.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>REALM Db integration for data management</li>
@@ -696,7 +738,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Driver App</h4>
-            <p><strong>Description:</strong> Developed a tracking application for drivers, enabling real-time location data retrieval during trips while in transit using the Worker Manager component.</p>
+            <p><strong>Description:</strong> A tracking application for drivers, enabling real-time location data retrieval during trips using the Worker Manager component.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Live database with MySQL for real-time tracking</li>
@@ -717,7 +759,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Patient App</h4>
-            <p><strong>Description:</strong> The Android Patient App collects sensor data from embedded devices via Bluetooth Low Energy (BLE), processes the data, and stores it locally and on a server using JSON/HTTPS protocols.</p>
+            <p><strong>Description:</strong> The Android Patient App collects sensor data via BLE, processes it, and stores it locally and on a server using JSON/HTTPS protocols.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Real-time data collection from BLE-enabled devices</li>
@@ -729,7 +771,7 @@
             <p>Android (Java), BLE, HTTP Client, JSON, GSON, Content Providers</p>
             <h4>Tools Used:</h4>
             <p>Android Studio, GitHub, Jira</p>
-            <p><strong>Play Store:</strong> The client app is available exclusively to authorized users.</p>
+            <p><strong>Play Store:</strong> Available exclusively to authorized users.</p>
         </div>
 
         <!-- Music Player - Android -->
@@ -738,7 +780,7 @@
                 <i class="fab fa-android" style="font-size: 36px;" title="Android"></i>
             </div>
             <h4>Music Player - Android</h4>
-            <p><strong>Description:</strong> Designed and developed a comprehensive local music player app, offering features like ringtone cutter, scheduled play, lyrics search, sleep timer, folder and song filters, karaoke recorder, Dubsmash integration, and more, focused on local music playback rather than streaming.</p>
+            <p><strong>Description:</strong> A comprehensive local music player app featuring a ringtone cutter, scheduled play, lyrics search, sleep timer, karaoke recorder, and more.</p>
             <h4>Key Features:</h4>
             <ul>
                 <li>Local music playback and song management</li>
@@ -754,6 +796,12 @@
             <p><strong>Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.eoxys.aikamusiq" target="_blank">Music Player App</a></p>
         </div>
     </div>
+</div>
+
+<!-- References Section -->
+<div id="references" class="section">
+    <h2>References</h2>
+    <p>References available upon request.</p>
 </div>
 
 <div id="certificates" class="section">
@@ -796,6 +844,11 @@
         <a href="https://www.linkedin.com/in/sivanandham-r/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="mailto:regunathsiva@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="tel:+917871474161"><i class="fas fa-phone"></i> Phone</a>
+    </div>
+    <div class="resume-download">
+        <a href="assets/Sivanandham_FlutterLead_9yrs.pdf" download class="resume-button">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
     </div>
     <p>© 2025 Sivanandham R. All Rights Reserved.</p>
 </footer>
