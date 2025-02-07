@@ -1,3 +1,8 @@
+/* Smooth scrolling for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -39,7 +44,7 @@ header .profile img {
   transition: transform 0.3s ease;
 }
 header .profile img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) perspective(500px) rotateY(5deg);
 }
 header h1 {
   font-size: 42px;
@@ -73,10 +78,27 @@ header .contact-info a:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.3s ease;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 .nav-bar a:hover {
   color: #00bcd4;
+}
+.nav-bar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00bcd4;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.nav-bar a:hover::after {
+  width: 100%;
+}
+.nav-bar a:active {
+  transform: scale(0.95);
 }
 
 /* Section Styles */
@@ -84,6 +106,14 @@ header .contact-info a:hover {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  /* Initial state for scroll animations */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .section h2 {
   font-size: 32px;
@@ -459,7 +489,7 @@ footer p {
 .resume-button:hover {
   background: #ff9800;
   color: #fff;
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(2deg);
 }
 
 /* References Section */
