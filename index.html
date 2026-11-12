@@ -1,242 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sivanandham R — Staff / Principal Mobile Engineer with 11+ years of experience in Flutter, Native Android, React Native, mobile architecture and technical leadership.">
-    <meta name="theme-color" content="#172b3a">
-    <title>Sivanandham R | Staff / Principal Mobile Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sivanandham R — Lead Mobile Engineer</title>
+    <meta name="description" content="Sivanandham R is a lead mobile engineer in Chennai. Eleven years across Flutter, native Android, and React Native, building product interfaces for delivery, warehouse, and operations platforms.">
+    <meta name="author" content="Sivanandham R">
+    <meta name="theme-color" content="#090b10">
+    <meta property="og:title" content="Sivanandham R — Lead Mobile Engineer">
+    <meta property="og:description" content="Product interfaces for delivery, warehouse, and operations platforms. Flutter, Android, and the teams that ship them.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://regunath-siva.github.io/">
+    <meta property="og:image" content="https://regunath-siva.github.io/assets/profile.jpeg">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://regunath-siva.github.io/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d6ff3f'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' font-weight='700' fill='%2311140a'%3ESR%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem("sr-theme");
+                var theme = saved === "light" || saved === "dark" ? saved : "dark";
+                document.documentElement.setAttribute("data-theme", theme);
+            } catch (e) {}
+            document.documentElement.classList.add("js");
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sivanandham R",
+        "jobTitle": "Lead Mobile Engineer",
+        "email": "mailto:regunath.siva@gmail.com",
+        "telephone": "+91-78714-74161",
+        "url": "https://regunath-siva.github.io/",
+        "image": "https://regunath-siva.github.io/assets/profile.jpeg",
+        "sameAs": ["https://www.linkedin.com/in/regunath-siva/"],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+        },
+        "knowsAbout": ["Flutter", "Dart", "Android", "React Native", "Mobile architecture", "Product UI"]
+    }
+    </script>
 </head>
-<body>
-<header>
-    <div class="profile">
-        <img src="assets/profile.jpeg" alt="Sivanandham R">
-        <h1>Sivanandham R</h1>
-        <p class="profile-title">Staff / Principal Mobile Engineer</p>
-        <p>Chennai, Tamil Nadu, India · Open to global opportunities</p>
-        <div class="contact-info">
-            <p><a href="tel:+917871474161">+91 78714 74161</a> &nbsp;|&nbsp; <a href="mailto:regunath.siva@gmail.com">regunath.siva@gmail.com</a></p>
+<body id="top">
+    <a class="skip" href="#about">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+    <header class="nav" id="nav">
+        <a class="logo" href="#top" aria-label="Sivanandham R, back to top">
+            <span>SR</span>
+        </a>
+        <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#background">Background</a>
+            <a href="#contact">Contact</a>
+            <a class="btn btn-lime nav-cta-mobile" href="#contact">Let's talk</a>
+        </nav>
+        <div class="nav-tools">
+            <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4 19 19M19 5l-1.6 1.6M6.6 17.4 5 19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 14.5A6.5 6.5 0 0 1 9 5.2 7 7 0 1 0 18.8 15a6.4 6.4 0 0 1-2.3-.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+            <a class="btn btn-lime nav-cta" href="#contact">Let's talk</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Open menu</span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="resume-download">
-            <a href="assets/Sivanandham_R_INov2026.pdf" download class="resume-button"><i class="fas fa-download"></i> Download Resume (Nov 2026)</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Open to staff &amp; principal roles</p>
+                    <h1>Sivanandham R</h1>
+                    <p class="hero-role">Lead Mobile Engineer</p>
+                    <p class="lede">I design and build the interfaces behind large-scale delivery, warehouse, and operations products — then lead the teams that ship them.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-lime" href="#work">Selected work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a class="btn btn-ghost" href="assets/Sivanandham_R_INov2026.pdf" download>Download resume</a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/regunath-siva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    <ul class="hero-meta">
+                        <li>Chennai, India</li>
+                        <li>Flutter · Android · React Native</li>
+                        <li>English &amp; Tamil</li>
+                    </ul>
+                </div>
+                <figure class="portrait">
+                    <img src="assets/profile.jpeg" width="413" height="531" alt="Portrait of Sivanandham R">
+                    <figcaption>Chennai · Product UI</figcaption>
+                    <div class="float-card float-a">
+                        <strong>11+</strong>
+                        <span>years shipping mobile products</span>
+                    </div>
+                    <div class="float-card float-b">
+                        <strong>5+</strong>
+                        <span>years in Flutter</span>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <p><span>Flutter</span><span>Dart</span><span>Kotlin</span><span>Android</span><span>React Native</span><span>Swift</span><span>BLoC</span><span>Firebase</span><span>Offline-first</span><span>UI modernization</span><span>Performance</span></p>
+                <p><span>Flutter</span><span>Dart</span><span>Kotlin</span><span>Android</span><span>React Native</span><span>Swift</span><span>BLoC</span><span>Firebase</span><span>Offline-first</span><span>UI modernization</span><span>Performance</span></p>
+            </div>
         </div>
-    </div>
-</header>
 
-<nav class="nav-bar" aria-label="Main navigation">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#apps">Selected Work</a>
-    <a href="#certificates">Certifications</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <section class="stats" aria-label="Highlights">
+            <div class="wrap stats-grid">
+                <article>
+                    <strong data-count="11" data-suffix="+">11+</strong>
+                    <span>Years building mobile products</span>
+                </article>
+                <article>
+                    <strong data-count="5" data-suffix="+">5+</strong>
+                    <span>Years focused on Flutter</span>
+                </article>
+                <article>
+                    <strong data-count="8">8</strong>
+                    <span>Engineers led at ElasticRun</span>
+                </article>
+                <article>
+                    <strong data-count="100" data-suffix="k">100k</strong>
+                    <span>Deliveries a day across the network</span>
+                </article>
+            </div>
+        </section>
 
-<main>
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-me-card">
-        <p class="highlight">I’m a mobile engineering leader with <strong>11+ years of experience</strong> building and delivering mobile products across Native Android, React Native and Flutter, including <strong>5+ years focused on Flutter</strong>.</p>
-        <p>I combine hands-on engineering with mobile architecture, technical leadership and end-to-end product delivery. I have led teams of up to <strong>8 engineers</strong> and partnered with product, QA, business, backend and AI teams to deliver reliable Android and iOS experiences and connected enterprise platforms.</p>
-        <p>My experience spans e-commerce, logistics, warehouse operations, workforce management and safety technology. At ElasticRun, the platforms I helped deliver supported <strong>5,000+ delivery associates, 1,000+ warehouse employees and approximately 100,000 deliveries per day</strong>.</p>
-        <p class="call-to-action">Interested in Staff / Principal Mobile Engineer, Mobile Architect and Mobile Platform Engineering opportunities, including international relocation and global teams.</p>
-    </div>
-</section>
+        <section id="about" class="section">
+            <div class="wrap">
+                <header class="about-head">
+                    <p class="eyebrow">01 — About</p>
+                    <h2>Interfaces for the warehouse floor, the delivery route, and the station manager’s phone.</h2>
+                </header>
+                <div class="about-layout">
+                    <p class="lead">I’m a mobile engineering lead with 11 years across Flutter, native Android, and React Native, including more than five years shipping Flutter. The job is the screen, the architecture under it, and the release that gets both into people’s hands.</p>
+                    <div class="about-notes">
+                        <p>At ElasticRun I led an eight-person team across warehouse execution, last-mile delivery, partner operations, and vendor management. Those products support 5,000+ delivery associates and 1,000+ warehouse employees, on a network of about 100,000 deliveries a day.</p>
+                        <p>I still write the UI. Planning, reviews, performance, and production ownership stay attached to the work — from the first layout to the build that ships. AI-assisted workflows, including Gemini, speed the modernization. The eye that signs off is still mine.</p>
+                        <p>I’m interested in staff and principal mobile roles, mobile architecture, and platform engineering with product companies and global teams. Open to relocation.</p>
+                    </div>
+                </div>
+            </div>
 
-<section id="skills" class="section">
-    <h2>Core Technical Skills</h2>
-    <div class="skills-container">
-        <div class="skill"><img src="assets/flutterio-icon.svg" alt="" width="20" height="20"> Flutter</div>
-        <div class="skill"><img src="assets/dartlang-icon.svg" alt="" width="20" height="20"> Dart</div>
-        <div class="skill"><i class="fab fa-android"></i> Native Android</div>
-        <div class="skill"><i class="fab fa-react"></i> React Native</div>
-        <div class="skill"><i class="fas fa-layer-group"></i> Mobile Architecture</div>
-        <div class="skill"><i class="fas fa-project-diagram"></i> BLoC & Provider</div>
-        <div class="skill"><i class="fas fa-database"></i> SQLite & Hive</div>
-        <div class="skill"><i class="fas fa-fire"></i> Firebase</div>
-        <div class="skill"><i class="fas fa-cloud"></i> REST APIs & GraphQL</div>
-        <div class="skill"><i class="fas fa-map-marked-alt"></i> Google Maps</div>
-        <div class="skill"><i class="fas fa-code-branch"></i> CI/CD & Azure DevOps</div>
-        <div class="skill"><i class="fas fa-tachometer-alt"></i> Performance & Stability</div>
-        <div class="skill"><i class="fas fa-users"></i> Technical Leadership</div>
-        <div class="skill"><i class="fas fa-robot"></i> Gemini AI-assisted Workflows</div>
-        <div class="skill"><i class="fas fa-vial"></i> Testing & Code Reviews</div>
-    </div>
-</section>
+            <div class="wrap craft">
+                <div class="section-intro">
+                    <p class="eyebrow">How I treat the UI</p>
+                    <h3>The interface is the product people actually touch.</h3>
+                </div>
+                <div class="craft-grid">
+                    <article>
+                        <span>01</span>
+                        <h3>The next action is obvious</h3>
+                        <p>Putaway, pick lists, and delivery runs are used on the move. Hierarchy, touch targets, and status have to read in a glance.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>It survives the network</h3>
+                        <p>Ordering, tasking, and field work stay usable offline. Local storage and sync are part of the interface, not a backend detail.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Polish ships with the release</h3>
+                        <p>Performance, stability, and the visual layer go out together. A smoother screen that misses the train is unfinished.</p>
+                    </article>
+                    <article>
+                        <span>04</span>
+                        <h3>Scale shows up in the details</h3>
+                        <p>Forms, empty states, and error copy used by thousands of people a day get the same care as the hero flow.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="experience" class="section">
-    <h2>Professional Experience</h2>
-    <div class="experience-container">
-        <article class="experience-card left">
-            <div class="experience-header">
-                <h3>ElasticRun</h3>
-                <p><strong>Lead Engineer</strong> | <i class="fas fa-calendar-alt"></i> Mar 2025 – Oct 2026</p>
-                <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+        <section id="skills" class="section">
+            <div class="wrap">
+                <div class="section-intro">
+                    <p class="eyebrow">02 — Skills</p>
+                    <h2>A stack picked up in production, from the first Java screen to Flutter platforms.</h2>
+                </div>
+                <div class="skill-grid">
+                    <article class="skill-card">
+                        <h3>Mobile</h3>
+                        <ul>
+                            <li>Flutter</li><li>Dart</li><li>Android</li><li>Kotlin</li><li>Java</li><li>React Native</li><li>iOS</li><li>Swift</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Architecture</h3>
+                        <ul>
+                            <li>BLoC</li><li>Provider</li><li>Modular design</li><li>REST</li><li>GraphQL</li><li>Offline-first</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Data &amp; services</h3>
+                        <ul>
+                            <li>SQLite</li><li>Hive</li><li>Firebase</li><li>Google Maps</li><li>WebView</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Delivery</h3>
+                        <ul>
+                            <li>CI/CD</li><li>Azure DevOps</li><li>Releases</li><li>Code review</li><li>Testing</li><li>Performance</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Leadership</h3>
+                        <ul>
+                            <li>Technical planning</li><li>Mentoring</li><li>Grooming</li><li>Stakeholder partnership</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>AI &amp; UI</h3>
+                        <ul>
+                            <li>UI modernization</li><li>Gemini-assisted development</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="experience-body">
-                <ul>
-                    <li>Led an <strong>8-member engineering team</strong> delivering Flutter mobile products and connected platforms across warehouse, delivery, partner and vendor-management workflows.</li>
-                    <li>Owned mobile architecture and hands-on implementation, including technical planning, code quality, reviews, release coordination and production delivery.</li>
-                    <li>Partnered with QA, business and backend/AI teams to translate operational requirements into maintainable product capabilities and coordinated end-to-end releases.</li>
-                    <li>Improved application performance, streamlined releases and modernized user interfaces using AI-assisted development workflows.</li>
-                </ul>
-                <div class="key-projects"><h4>Platforms &amp; Contributions</h4><ul>
-                    <li><strong>ElasticRun Partner App (Android &amp; iOS):</strong> putaway, pick lists, stock reconciliation and movement, order pickup, delivery and workforce task allocation.</li>
-                    <li><strong>Navis – Partner &amp; Operations Platform:</strong> partner onboarding, intercity (ICT) vehicle management, earnings and payouts, referrals, live tracking and GreenFlow guidance.</li>
-                    <li><strong>Matrix Vendor Management:</strong> end-to-end ownership of attendance, invoicing, employee management and operational reporting.</li>
-                    <li><strong>AI-driven Control Tower:</strong> led mobile-side integration for centralized operational alerts and station-manager guidance, collaborating with backend and AI teams.</li>
-                </ul></div>
-                <p class="impact-line"><strong>Scale:</strong> 5,000+ delivery associates · 1,000+ warehouse employees · ~100,000 deliveries/day</p>
-                <p><strong>Partner App:</strong> <a href="https://play.google.com/store/apps/details?id=run.er.ecom.field" target="_blank" rel="noopener">Google Play</a> · <a href="https://apps.apple.com/in/app/elasticrun-partner-app/id6744049038" target="_blank" rel="noopener">App Store</a></p>
-            </div>
-        </article>
+        </section>
 
-        <article class="experience-card right">
-            <div class="experience-header">
-                <h3>SafetyMojo</h3>
-                <p><strong>Senior Mobile Developer</strong> | <i class="fas fa-calendar-alt"></i> Jan 2024 – Dec 2024</p>
-                <p><i class="fas fa-map-marker-alt"></i> Remote</p>
-            </div>
-            <div class="experience-body">
-                <ul>
-                    <li>Led 3 developers delivering cross-platform Flutter applications for safety management on Android and iOS.</li>
-                    <li>Owned code reviews, releases and hotfixes; facilitated requirements grooming, sprint planning and estimation.</li>
-                    <li>Delivered SafetyMojo and AGC Fast Facts 2.0, supporting real-time safety monitoring, compliance tracking, configurable forms and frontline engagement.</li>
-                    <li>Integrated local storage, networking, speech-to-text, file picking, Google Maps/Places, WebView and QR workflows.</li>
-                </ul>
-            </div>
-        </article>
+        <section id="experience" class="section">
+            <div class="wrap">
+                <div class="section-intro">
+                    <p class="eyebrow">03 — Experience</p>
+                    <h2>Eleven years, three companies, one through-line: the screen that runs the operation.</h2>
+                </div>
+                <div class="timeline">
+                    <article class="role">
+                        <div class="role-meta">
+                            <p class="role-when">Mar 2025 — Oct 2026</p>
+                            <p>Pune, India</p>
+                        </div>
+                        <div class="role-body">
+                            <p class="role-co">ElasticRun</p>
+                            <h3>Lead Engineer</h3>
+                            <p>Led an eight-person team delivering Flutter products and the platforms connected to them: warehouse, delivery, partner, and vendor workflows. Owned architecture and still wrote the implementation — planning, reviews, release coordination, and production.</p>
+                            <ul>
+                                <li>Partnered with QA, business, backend, and AI teams to turn operational requirements into maintainable product capabilities, and coordinated the releases end to end.</li>
+                                <li>Improved performance, tightened the release path, and modernized interfaces with AI-assisted workflows.</li>
+                                <li>Shipped the Partner App for associates and warehouse staff: putaway, pick lists, stock reconciliation and movement, order pickup, delivery, and task allocation.</li>
+                                <li>Built Navis capabilities linking warehouse and delivery: onboarding, intercity vehicles, earnings and payouts, referrals, live tracking, and GreenFlow guidance.</li>
+                                <li>Owned the Matrix vendor platform: attendance, invoices, employee management, and operational reporting.</li>
+                                <li>Led the mobile integration for an AI control tower, giving station managers one place for alerts and guidance.</li>
+                            </ul>
+                            <p class="impact">5,000+ delivery associates · 1,000+ warehouse employees · ~100,000 deliveries a day</p>
+                        </div>
+                    </article>
 
-        <article class="experience-card left">
-            <div class="experience-header">
-                <h3>ElasticRun</h3>
-                <p><strong>Lead Engineer</strong> | <i class="fas fa-calendar-alt"></i> Apr 2022 – Dec 2023</p>
-                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
-            </div>
-            <div class="experience-body">
-                <ul>
-                    <li>Led 5 developers building Flutter applications for shop owners and sales teams.</li>
-                    <li>Owned architecture, API integration, end-to-end testing, code reviews, publishing and distribution.</li>
-                    <li>Delivered e-commerce capabilities including wishlist, cart, promotions, units of measure, payment gateway and offline support.</li>
-                    <li>Built ElasticRun Sales for salesperson-led ordering, promotions, payments and offline operation.</li>
-                </ul>
-            </div>
-            <div class="experience-separator"><div class="separator-line"></div><div class="separator-icon"><i class="fas fa-star"></i></div><div class="separator-line"></div></div>
-            <div class="experience-header">
-                <p><strong>Software Engineer</strong> | <i class="fas fa-calendar-alt"></i> Jul 2018 – Apr 2022</p>
-                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
-            </div>
-            <div class="experience-body">
-                <ul>
-                    <li>Built and maintained React Native and Native Android applications for e-commerce and logistics.</li>
-                    <li>Contributed to Mobile Kirana, a reseller-oriented e-commerce application with competitive pricing.</li>
-                    <li>Developed Velocity Duos and Velocity for business development, vendor management, ground operations and managerial workflows.</li>
-                    <li>Implemented driver tracking to retrieve trip location updates while in transit.</li>
-                </ul>
-            </div>
-        </article>
+                    <article class="role">
+                        <div class="role-meta">
+                            <p class="role-when">Jan 2024 — Dec 2024</p>
+                            <p>Remote</p>
+                        </div>
+                        <div class="role-body">
+                            <p class="role-co">SafetyMojo</p>
+                            <h3>Senior Mobile Developer</h3>
+                            <p>Led three developers on cross-platform Flutter apps for safety management. Owned reviews, store releases, and hotfixes, and ran grooming, planning, and estimation.</p>
+                            <ul>
+                                <li>Shipped SafetyMojo and AGC Fast Facts 2.0: live safety monitoring, compliance tracking, configurable forms, and frontline engagement.</li>
+                                <li>Integrated local storage, networking, speech-to-text, file picking, Google Maps and Places, WebView, and QR flows.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-        <article class="experience-card right">
-            <div class="experience-header">
-                <h3>Eoxys Systems India Pvt. Ltd.</h3>
-                <p><strong>Software Developer</strong> | <i class="fas fa-calendar-alt"></i> Jul 2015 – Jun 2018</p>
-                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                    <article class="role">
+                        <div class="role-meta">
+                            <p class="role-when">Apr 2022 — Dec 2023</p>
+                            <p>Bengaluru, India</p>
+                        </div>
+                        <div class="role-body">
+                            <p class="role-co">ElasticRun</p>
+                            <h3>Lead Engineer</h3>
+                            <p>Led five developers building Flutter apps for shop owners and sales teams. Owned architecture, API integration, testing, reviews, publishing, and distribution.</p>
+                            <ul>
+                                <li>Delivered commerce flows: wishlist, cart, promotions, units of measure, payments, and offline support.</li>
+                                <li>Built ElasticRun Sales for salesperson-led ordering, promotions, payments, and offline operation.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-meta">
+                            <p class="role-when">Jul 2018 — Apr 2022</p>
+                            <p>Remote</p>
+                        </div>
+                        <div class="role-body">
+                            <p class="role-co">ElasticRun</p>
+                            <h3>Software Engineer</h3>
+                            <p>Built and maintained React Native and native Android apps for commerce and logistics.</p>
+                            <ul>
+                                <li>Contributed to Mobile Kirana, a reseller commerce app built around competitive pricing.</li>
+                                <li>Developed Velocity and Velocity Duos for business development, vendor management, ground operations, and managers.</li>
+                                <li>Implemented driver tracking so trips reported location while in transit.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="role">
+                        <div class="role-meta">
+                            <p class="role-when">Jul 2015 — Jun 2018</p>
+                            <p>Bengaluru, India</p>
+                        </div>
+                        <div class="role-body">
+                            <p class="role-co">Eoxys Systems India</p>
+                            <h3>Software Developer</h3>
+                            <p>Designed and shipped native Android applications in Java and Kotlin: the interface, the API integration, and the store release.</p>
+                            <ul>
+                                <li>Built a patient app that collected BLE sensor data from embedded devices, with local and server storage over JSON and HTTPS.</li>
+                                <li>Designed a local music player with audio management utilities.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="experience-body">
-                <ul>
-                    <li>Developed Native Android applications using Java and Kotlin, including frontend workflows, backend API integration and store publishing.</li>
-                    <li>Built a Patient App that collected BLE sensor data from embedded devices and supported local/server JSON and HTTPS storage.</li>
-                    <li>Designed and developed a local Music Player with audio management utilities.</li>
-                </ul>
+        </section>
+
+        <section id="work" class="section">
+            <div class="wrap">
+                <div class="section-head">
+                    <div class="section-intro">
+                        <p class="eyebrow">04 — Selected work</p>
+                        <h2>Products and platforms.</h2>
+                    </div>
+                    <div class="filters" role="tablist" aria-label="Filter work">
+                        <button type="button" role="tab" id="tab-all" aria-selected="true" data-filter="all">All</button>
+                        <button type="button" role="tab" id="tab-mobile" aria-selected="false" data-filter="mobile">Mobile</button>
+                        <button type="button" role="tab" id="tab-platform" aria-selected="false" data-filter="platform">Platforms</button>
+                        <button type="button" role="tab" id="tab-earlier" aria-selected="false" data-filter="earlier">Earlier</button>
+                    </div>
+                </div>
+                <p class="work-count" id="work-count" aria-live="polite">8 projects</p>
+                <div class="work-grid">
+                    <article class="work-card feature" data-kind="mobile">
+                        <div class="work-copy">
+                            <p class="tag">Flutter · Android &amp; iOS</p>
+                            <h3>ElasticRun Partner App</h3>
+                            <p>The field application for delivery associates and warehouse employees. Warehouse execution and last-mile delivery, used every day at the scale of the network.</p>
+                            <ul>
+                                <li>Putaway, pick lists, and stock reconciliation</li>
+                                <li>Stock movement and order pickup</li>
+                                <li>Delivery flows and workforce task allocation</li>
+                            </ul>
+                            <p class="stack">Flutter, Dart, BLoC, REST, Firebase, SQLite, Hive</p>
+                            <div class="work-links">
+                                <a href="https://play.google.com/store/apps/details?id=run.er.ecom.field" target="_blank" rel="noopener noreferrer">Google Play</a>
+                                <a href="https://apps.apple.com/in/app/elasticrun-partner-app/id6744049038" target="_blank" rel="noopener noreferrer">App Store</a>
+                            </div>
+                        </div>
+                        <div class="device" aria-hidden="true">
+                            <p class="device-note">Stylized study, not a screenshot</p>
+                            <div class="phone" id="phone-demo">
+                                <div class="phone-top"><span></span> Partner</div>
+                                <p class="phone-kicker">Today’s run</p>
+                                <p class="phone-metric">48 <small>stops</small></p>
+                                <div class="phone-bar" aria-hidden="true"><span></span></div>
+                                <div class="route" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                                <ul>
+                                    <li><i></i><span>Putaway</span><em>Done</em></li>
+                                    <li><i></i><span>Pick list</span><em>Done</em></li>
+                                    <li class="active"><i></i><span>Delivery</span><em>Live</em></li>
+                                    <li><i></i><span>Reconcile</span><em>Queued</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card" data-kind="platform">
+                        <p class="tag">Platform</p>
+                        <h3>Navis</h3>
+                        <p>Partner and operations platform linking warehouse management with delivery. Onboarding, intercity vehicles, earnings, payouts, referrals, live tracking, and GreenFlow guidance.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="platform">
+                        <p class="tag">Web · end to end</p>
+                        <h3>Matrix</h3>
+                        <p>Vendor management I owned outright: attendance, invoicing, employee management, and the operational reports the business runs on.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="mobile platform">
+                        <p class="tag">Mobile · AI</p>
+                        <h3>Control Tower</h3>
+                        <p>Mobile integration for an AI alert system. Station managers get centralized guidance, built with the backend and AI teams who own the models.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="mobile">
+                        <p class="tag">Flutter</p>
+                        <h3>Commerce &amp; Sales</h3>
+                        <p>Shop-owner and salesperson apps: wishlist, cart, promotions, units of measure, payments, and offline ordering when the network drops.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="mobile">
+                        <p class="tag">Flutter · Safety</p>
+                        <h3>SafetyMojo &amp; Fast Facts</h3>
+                        <p>Monitoring, compliance, and frontline engagement. Configurable forms, QR flows, maps, speech-to-text, and local storage on Android and iOS.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="earlier mobile">
+                        <p class="tag">React Native · Android</p>
+                        <h3>Kirana, Velocity, Driver</h3>
+                        <p>Reseller commerce, vendor and ground operations, and in-transit driver location. The years the stack moved from native Android into React Native.</p>
+                    </article>
+
+                    <article class="work-card" data-kind="earlier">
+                        <p class="tag">Android · Java &amp; Kotlin</p>
+                        <h3>Patient app &amp; player</h3>
+                        <p>A BLE patient app collecting sensor data from embedded devices, plus a local music player. First years of interface work, APIs, and store releases.</p>
+                    </article>
+                </div>
             </div>
-        </article>
-    </div>
-</section>
+        </section>
 
-<section id="apps" class="section">
-    <h2>Selected Products &amp; Platforms</h2>
-    <div class="projects-grid">
-        <article class="project-card">
-            <div class="tech-stack-icons"><img src="assets/icons8-flutter-48.png" alt="Flutter" width="36"></div>
-            <h4>ElasticRun Partner App</h4>
-            <p>Enterprise partner application for delivery associates and warehouse employees, supporting warehouse execution and last-mile delivery workflows.</p>
-            <h4>Key Capabilities</h4><ul><li>Putaway, pick lists and stock reconciliation</li><li>Stock movement and order pickup</li><li>Delivery workflows and workforce task allocation</li></ul>
-            <h4>Technology</h4><p>Flutter, Dart, BLoC, REST APIs, Firebase, SQLite/Hive</p>
-            <p><a href="https://play.google.com/store/apps/details?id=run.er.ecom.field" target="_blank" rel="noopener">Google Play</a> · <a href="https://apps.apple.com/in/app/elasticrun-partner-app/id6744049038" target="_blank" rel="noopener">App Store</a></p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><i class="fas fa-network-wired" style="font-size:34px"></i></div>
-            <h4>Navis – Partner &amp; Operations Platform</h4>
-            <p>Connected partner-management and operations platform linking warehouse management and delivery operations.</p>
-            <h4>Key Capabilities</h4><ul><li>Partner onboarding and delivery management</li><li>Intercity vehicle management, earnings and payouts</li><li>Referrals, live tracking and GreenFlow guidance</li></ul>
-            <h4>Platform</h4><p>Web platform and mobile ecosystem integration</p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><i class="fas fa-clipboard-list" style="font-size:34px"></i></div>
-            <h4>Matrix – Vendor Management</h4>
-            <p>Vendor and workforce management platform with end-to-end ownership of key operational workflows.</p>
-            <h4>Key Capabilities</h4><ul><li>Attendance and employee management</li><li>Invoice management</li><li>Operational reporting</li></ul>
-            <h4>Platform</h4><p>Web application</p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><i class="fas fa-brain" style="font-size:34px"></i></div>
-            <h4>AI-driven Alert Management &amp; Control Tower</h4>
-            <p>Mobile-side integration for centralized operational alerts and guided actions for station managers, delivered in collaboration with backend and AI teams.</p>
-            <h4>Focus</h4><ul><li>Operational alert visibility</li><li>Centralized station-manager guidance</li><li>Mobile integration with AI/backend services</li></ul>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><img src="assets/icons8-flutter-48.png" alt="Flutter" width="36"></div>
-            <h4>ElasticRun E-commerce &amp; Sales Apps</h4>
-            <p>Flutter applications for shop owners and sales teams, enabling ordering and salesperson-led commerce.</p>
-            <h4>Key Capabilities</h4><ul><li>Wishlist, cart, promotions and UOM</li><li>Payment gateway integration</li><li>Offline ordering and operations</li></ul>
-            <h4>Technology</h4><p>Flutter, BLoC, REST APIs, Firebase, SQLite</p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><img src="assets/icons8-flutter-48.png" alt="Flutter" width="36"></div>
-            <h4>SafetyMojo &amp; AGC Fast Facts 2.0</h4>
-            <p>Cross-platform safety applications for monitoring, compliance and frontline engagement.</p>
-            <h4>Key Capabilities</h4><ul><li>Safety monitoring and compliance tracking</li><li>Configurable forms and QR workflows</li><li>Maps, speech-to-text and local storage</li></ul>
-            <h4>Technology</h4><p>Flutter, Firebase, REST APIs, local storage, Google Maps/Places</p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><i class="fab fa-android" style="font-size:34px"></i><i class="fab fa-react" style="font-size:34px"></i></div>
-            <h4>Mobile Kirana, Velocity &amp; Driver Apps</h4>
-            <p>Earlier Android and React Native products supporting reseller commerce, vendor operations, ground teams and logistics.</p>
-            <h4>Key Capabilities</h4><ul><li>Reseller e-commerce and pricing</li><li>Vendor and ground-operations workflows</li><li>Driver trip location tracking</li></ul>
-            <h4>Technology</h4><p>React Native, Android (Java), Redux, REST APIs, GPS</p>
-        </article>
-        <article class="project-card">
-            <div class="tech-stack-icons"><i class="fab fa-android" style="font-size:34px"></i></div>
-            <h4>Patient App &amp; Music Player</h4>
-            <p>Native Android applications developed at Eoxys Systems, including a BLE-connected patient application and local music player.</p>
-            <h4>Technology</h4><p>Android, Java, Kotlin, BLE, JSON, HTTPS and Android media framework</p>
-        </article>
-    </div>
-</section>
+        <section id="background" class="section">
+            <div class="wrap">
+                <div class="section-intro">
+                    <p class="eyebrow">05 — Background</p>
+                    <h2>Education, languages, and recent study.</h2>
+                </div>
+                <div class="bg-grid">
+                    <article class="bg-card">
+                        <p class="tag">Education</p>
+                        <h3>B.E., Electronics &amp; Communication</h3>
+                        <p>Dr. Navalar Nedunchezhiyan College of Engineering, Tholudur</p>
+                        <p class="meta">2010 — 2014</p>
+                    </article>
+                    <article class="bg-card">
+                        <p class="tag">Languages</p>
+                        <h3>English &amp; Tamil</h3>
+                        <p>Working language for global teams, and the language of home.</p>
+                    </article>
+                    <article class="bg-card cert">
+                        <p class="tag">Certification · Jan 2025</p>
+                        <h3>Flutter Essential Training</h3>
+                        <p>Build for multiple platforms. Issued by LinkedIn.</p>
+                    </article>
+                    <article class="bg-card cert">
+                        <p class="tag">Certification · Jan 2025</p>
+                        <h3>Dart Clean Code</h3>
+                        <p>High-efficiency, maintainable Dart. Issued by LinkedIn.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section id="certificates" class="section">
-    <h2>Certifications</h2>
-    <div class="certifications-section">
-        <div class="certification-card"><div class="certification-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></div><div class="certification-details"><h3>Flutter Essential Training: Build for Multiple Platforms</h3><p><strong>Issued by:</strong> LinkedIn · Jan 2025</p><div class="certification-skills-container"><div class="skill">Flutter</div><div class="skill">Dart</div></div></div></div>
-        <div class="certification-card"><div class="certification-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></div><div class="certification-details"><h3>Dart Clean Code: Writing High-Efficiency, Maintainable Dart Programs</h3><p><strong>Issued by:</strong> LinkedIn · Jan 2025</p><div class="certification-skills-container"><div class="skill">Flutter</div><div class="skill">Dart</div></div></div></div>
-    </div>
-</section>
-</main>
+        <section id="contact" class="section contact">
+            <div class="wrap contact-panel">
+                <p class="eyebrow">06 — Contact</p>
+                <h2><a href="mailto:regunath.siva@gmail.com">regunath.siva@gmail.com</a></h2>
+                <p class="lede">Staff and principal mobile roles, architecture, and platform engineering. Chennai today. Open to global teams and relocation.</p>
+                <div class="contact-actions">
+                    <a class="btn btn-lime" href="mailto:regunath.siva@gmail.com">Email me</a>
+                    <button class="btn btn-ghost" type="button" data-copy="regunath.siva@gmail.com">Copy email</button>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/regunath-siva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="btn btn-ghost" href="tel:+917871474161">+91 78714 74161</a>
+                    <a class="btn btn-ghost" href="assets/Sivanandham_R_INov2026.pdf" download>Resume · Nov 2026</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<footer id="contact">
-    <h2>Let's Connect</h2>
-    <p>Open to Staff / Principal Mobile Engineer, Mobile Architect and Mobile Platform opportunities.</p>
-    <div class="contact-links">
-        <a href="https://www.linkedin.com/in/regunath-siva" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:regunath.siva@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="tel:+917871474161"><i class="fas fa-phone"></i> Phone</a>
-    </div>
-    <div class="resume-download"><a href="assets/Sivanandham_R_INov2026.pdf" download class="resume-button"><i class="fas fa-download"></i> Download Resume</a></div>
-    <p>© 2026 Sivanandham R. All Rights Reserved.</p>
-</footer>
-<script src="js/script.js"></script>
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <p>© <span id="year">2026</span> Sivanandham R</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

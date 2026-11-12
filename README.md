@@ -1,15 +1,9 @@
 # Sivanandham R — Portfolio
 
-Personal GitHub Pages portfolio for Sivanandham R.
+Personal site for Sivanandham R, lead mobile engineer. Static HTML, CSS, and JavaScript for GitHub Pages. No build step.
 
-## Update included
-- Refreshed positioning to Staff / Principal Mobile Engineer.
-- Updated professional summary, technical skills and career timeline using the November 2026 resume.
-- Added the latest ElasticRun Lead Engineer role (March 2025 – October 2026), team leadership, platform ownership and scale metrics.
-- Added Partner App, Navis, Matrix and AI-driven Control Tower to selected work.
-- Corrected earlier ElasticRun and SafetyMojo role dates and descriptions.
-- Replaced the resume download with the latest resume, available at `assets/Sivanandham_R_INov2026.pdf`.
-- Updated page metadata, navigation and responsive readability styles.
+Content follows the November 2026 resume: Flutter, native Android, and React Native work, ElasticRun, SafetyMojo, and Eoxys. The resume download is `assets/Sivanandham_R_INov2026.pdf`.
 
 ## Deploy
-Commit and push the contents of this repository to the configured GitHub Pages branch. The site uses relative asset paths and does not require a build step.
+
+Commit and push to the GitHub Pages branch. Asset paths are relative to the site root.
